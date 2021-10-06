@@ -1,0 +1,6 @@
+name: Maestro Custom
+type: module
+description: 'Custom function for Drupal 8 Maestro Module.'
+package: Custom
+version: 1.0
+core: 8.x
