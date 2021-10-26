@@ -1,0 +1,19 @@
+uuid: 189587a6-f72e-4421-8abc-c263e07dac8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reg_sibling_name
+    - paragraphs.paragraphs_type.reg_sibling
+id: paragraph.reg_sibling.field_reg_sibling_name
+field_name: field_reg_sibling_name
+entity_type: paragraph
+bundle: reg_sibling
+label: 'ຊື່ ແລະ ນາມສະກຸນ'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

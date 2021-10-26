@@ -1,0 +1,14 @@
+uuid: f3cf73c9-8cc6-4c35-bbdc-b42f35832478
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.students
+  module:
+    - user
+id: user_remove_role_action.students
+label: 'Remove the ນັກຮຽນ role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: students

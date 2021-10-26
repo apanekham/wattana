@@ -1,0 +1,14 @@
+uuid: ac55f4d0-6e30-438c-af5f-ce39de79db5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.deputy_managing_director
+  module:
+    - user
+id: user_remove_role_action.deputy_managing_director
+label: 'Remove the ຮອງຜູ້ອໍານວຍການ role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: deputy_managing_director

@@ -1,0 +1,10 @@
+uuid: 802c18f0-34d8-4b15-a32e-429eefc4d698
+langcode: en
+status: true
+dependencies: {  }
+id: reg_sibling
+label: ຊື່ພີ່ນ້ອງຮ່ວມກັນ
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

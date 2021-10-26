@@ -1,0 +1,41 @@
+uuid: b71a3a29-6b0d-463e-be0f-d1965de3f270
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_marriage
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      administration_staff: administration_staff
+      accounting_staff: accounting_staff
+      teacher: teacher
+      authenticated: 0
+      students: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_marriage
+field_name: field_reg_marriage
+entity_type: user
+bundle: user
+label: ກໍລະນີແຕ່ງງານແລ້ວ
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ແຕ່ງງານແລ້ວ
+  off_label: ໂສດ
+field_type: boolean

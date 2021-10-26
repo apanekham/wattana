@@ -1,0 +1,19 @@
+uuid: 089e4f7b-5036-4cdd-a7e7-a629f1b7c9e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_reg_education_01
+field_name: field_reg_education_01
+entity_type: user
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

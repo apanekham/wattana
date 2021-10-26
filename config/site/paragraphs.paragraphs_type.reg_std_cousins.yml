@@ -1,0 +1,10 @@
+uuid: 3298f6ed-547e-45fe-9403-fe6b351a4c41
+langcode: en
+status: true
+dependencies: {  }
+id: reg_std_cousins
+label: ພີ່ນ້ອງເຂົ້າໂຮງຮຽນວັດທະນາ
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

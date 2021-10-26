@@ -1,0 +1,23 @@
+uuid: 1de70c79-0d1a-4c8f-af69-a058de41371d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.technical_support_request
+  module:
+    - text
+id: node.technical_support_request.body
+field_name: body
+entity_type: node
+bundle: technical_support_request
+label: 'Technical Support Issue'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

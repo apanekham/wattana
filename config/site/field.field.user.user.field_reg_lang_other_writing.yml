@@ -1,0 +1,38 @@
+uuid: ef6b182a-5b1f-4f5b-ad7f-6e8090ce5e44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_lang_other_writing
+  module:
+    - multiple_registration
+    - options
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      administration_staff: administration_staff
+      accounting_staff: accounting_staff
+      teacher: teacher
+      authenticated: 0
+      students: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_lang_other_writing
+field_name: field_reg_lang_other_writing
+entity_type: user
+bundle: user
+label: ການຂຽນ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

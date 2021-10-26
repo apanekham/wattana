@@ -1,0 +1,51 @@
+uuid: 4dd335a1-565a-42bf-a77c-f638ff3ba9ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_child_name
+    - paragraphs.paragraphs_type.reg_child
+  module:
+    - entity_reference_revisions
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      administration_staff: administration_staff
+      accounting_staff: accounting_staff
+      teacher: teacher
+      authenticated: 0
+      students: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_child_name
+field_name: field_reg_child_name
+entity_type: user
+bundle: user
+label: ຊື່ລູກ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      reg_child: reg_child
+    target_bundles_drag_drop:
+      reg_child:
+        enabled: true
+        weight: 3
+      reg_sibling:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

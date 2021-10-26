@@ -1,0 +1,19 @@
+uuid: a6bf60c6-d553-40f4-b074-6ce8486f2e32
+langcode: en
+status: true
+dependencies:
+  module:
+    - telephone
+    - user
+id: user.field_reg_father_office_tel
+field_name: field_reg_father_office_tel
+entity_type: user
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

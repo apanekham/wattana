@@ -1,0 +1,36 @@
+uuid: ec7ba9c1-da79-4c23-8d1d-793d5bb95d4f
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - maestro_form_approval_example
+_core:
+  default_config_hash: VcgGHPoh7PIEU6pnkO9igzabXqEBEt25nJzQ3KKZv3U
+id: maestro_example
+label: 'Maestro Example'
+weight: 3
+is_admin: null
+permissions:
+  - 'access content'
+  - 'add maestro entity identifiers entities'
+  - 'add maestro process entities'
+  - 'add maestro production assignment entities'
+  - 'add maestro queue entities'
+  - 'administer users'
+  - 'create approval_form content'
+  - 'create technical_support_request content'
+  - 'delete maestro entity identifiers entities'
+  - 'delete maestro process entities'
+  - 'delete maestro production assignment entities'
+  - 'delete maestro queue entities'
+  - 'edit any approval_form content'
+  - 'edit any technical_support_request content'
+  - 'edit maestro entity identifiers entities'
+  - 'edit maestro process entities'
+  - 'edit maestro production assignment entities'
+  - 'edit maestro queue entities'
+  - 'edit own technical_support_request content'
+  - 'start maestro process'
+  - 'view maestro task console'
+  - 'view own unpublished content'

@@ -1,0 +1,19 @@
+uuid: 636dfb5f-af0b-4602-aec6-92138adc7fe3
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_reg_birth_address
+field_name: field_reg_birth_address
+entity_type: user
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

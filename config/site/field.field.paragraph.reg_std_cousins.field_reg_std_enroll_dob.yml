@@ -1,0 +1,21 @@
+uuid: 43f6233b-ad5c-42d1-983d-364bcec1cb77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reg_std_enroll_dob
+    - paragraphs.paragraphs_type.reg_std_cousins
+  module:
+    - datetime
+id: paragraph.reg_std_cousins.field_reg_std_enroll_dob
+field_name: field_reg_std_enroll_dob
+entity_type: paragraph
+bundle: reg_std_cousins
+label: ວັນ/ເດືອນ/ປີເກີດ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

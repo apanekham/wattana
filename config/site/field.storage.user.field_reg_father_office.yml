@@ -1,0 +1,21 @@
+uuid: 33258086-cee8-4d44-b5bb-9be73edf7af5
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_reg_father_office
+field_name: field_reg_father_office
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

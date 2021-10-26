@@ -1,0 +1,19 @@
+uuid: 1a02912b-8221-490f-b21c-32b573233e53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_response_it_use_only_
+    - node.type.technical_support_request
+id: node.technical_support_request.field_response_it_use_only_
+field_name: field_response_it_use_only_
+entity_type: node
+bundle: technical_support_request
+label: 'Response (IT use only)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

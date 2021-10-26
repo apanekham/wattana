@@ -1,0 +1,10 @@
+uuid: aa056bcc-224f-447c-8af5-1f568e4d4720
+langcode: en
+status: true
+dependencies:
+  module:
+    - maestro
+id: maestro_production_assignments.token
+label: Token
+targetEntityType: maestro_production_assignments
+cache: true

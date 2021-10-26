@@ -1,0 +1,31 @@
+uuid: f8000ae9-9035-46be-94ce-eaee8b12bf72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_std_id
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      students: students
+      authenticated: 0
+      parents: 0
+    user_additional_register_form_required:
+      students: students
+      authenticated: 0
+      parents: 0
+id: user.user.field_reg_std_id
+field_name: field_reg_std_id
+entity_type: user
+bundle: user
+label: ເລກທີ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

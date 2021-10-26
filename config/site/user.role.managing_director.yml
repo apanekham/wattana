@@ -1,0 +1,9 @@
+uuid: 9e10e462-d26a-47c5-8985-3733068438cf
+langcode: en
+status: true
+dependencies: {  }
+id: managing_director
+label: ຜູ້ອໍານວຍການ
+weight: 5
+is_admin: null
+permissions: {  }

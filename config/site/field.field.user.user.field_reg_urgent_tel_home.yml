@@ -1,0 +1,38 @@
+uuid: 3c2da31d-cf10-4728-a84b-d79248fffb9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_urgent_tel_home
+  module:
+    - multiple_registration
+    - telephone
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      students: students
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_urgent_tel_home
+field_name: field_reg_urgent_tel_home
+entity_type: user
+bundle: user
+label: ເບີໂທບ້ານ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,20 @@
+uuid: 0e69e8b9-a851-4c5e-892e-56d29a70f4b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_reg_child_age
+field_name: field_reg_child_age
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

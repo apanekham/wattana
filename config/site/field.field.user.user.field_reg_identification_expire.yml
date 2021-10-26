@@ -1,0 +1,38 @@
+uuid: 8936a692-1ab3-4d40-badb-66419768b819
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_identification_expire
+  module:
+    - datetime
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      administration_staff: administration_staff
+      accounting_staff: accounting_staff
+      teacher: teacher
+      authenticated: 0
+      students: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_identification_expire
+field_name: field_reg_identification_expire
+entity_type: user
+bundle: user
+label: 'ບັດປະຈໍາໂຕ/Passport ໝົດອາຍຸວັນເດືອນປີ'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

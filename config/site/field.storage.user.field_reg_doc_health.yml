@@ -1,0 +1,23 @@
+uuid: 0843fb24-83bb-44a2-8c44-cdefc5fc18a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - user
+id: user.field_reg_doc_health
+field_name: field_reg_doc_health
+entity_type: user
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

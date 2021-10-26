@@ -1,0 +1,19 @@
+uuid: b24a07ce-0731-4179-a103-c32bc241ef51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reg_std_enroll_rel
+    - paragraphs.paragraphs_type.reg_std_cousins
+id: paragraph.reg_std_cousins.field_reg_std_enroll_rel
+field_name: field_reg_std_enroll_rel
+entity_type: paragraph
+bundle: reg_std_cousins
+label: ສາຍສໍາພັນ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

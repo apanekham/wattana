@@ -1,0 +1,38 @@
+uuid: 8750992f-75ba-4182-93d5-1c5d41ae42f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_mother_office_tel
+  module:
+    - multiple_registration
+    - telephone
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      students: students
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_mother_office_tel
+field_name: field_reg_mother_office_tel
+entity_type: user
+bundle: user
+label: ເບີໂທຫ້ອງການແມ່
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

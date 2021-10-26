@@ -1,0 +1,20 @@
+uuid: 0456b086-ec37-4622-be1c-e4155f813951
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - paragraphs
+id: paragraph.field_reg_std_enroll_dob
+field_name: field_reg_std_enroll_dob
+entity_type: paragraph
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

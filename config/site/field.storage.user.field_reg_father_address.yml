@@ -1,0 +1,19 @@
+uuid: 22949b8c-4e9a-43d4-82cd-d9ace159cb1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_reg_father_address
+field_name: field_reg_father_address
+entity_type: user
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,40 @@
+uuid: 96cc07b5-25ac-4e3f-9ec0-b95bc1f06db4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_std_disease
+  module:
+    - multiple_registration
+    - options
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      students: students
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      parents: 0
+    user_additional_register_form_required:
+      students: students
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      parents: 0
+id: user.user.field_reg_std_disease
+field_name: field_reg_std_disease
+entity_type: user
+bundle: user
+label: ມີພະຍາດປະຈຳຕົວບໍ່
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

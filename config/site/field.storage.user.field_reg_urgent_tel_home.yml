@@ -1,0 +1,19 @@
+uuid: db560ce9-c890-4896-900b-57ce563a2971
+langcode: en
+status: true
+dependencies:
+  module:
+    - telephone
+    - user
+id: user.field_reg_urgent_tel_home
+field_name: field_reg_urgent_tel_home
+entity_type: user
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

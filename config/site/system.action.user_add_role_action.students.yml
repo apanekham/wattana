@@ -1,0 +1,14 @@
+uuid: 48f3970a-6c61-44fa-a309-42a22db7a296
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.students
+  module:
+    - user
+id: user_add_role_action.students
+label: 'Add the ນັກຮຽນ role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: students

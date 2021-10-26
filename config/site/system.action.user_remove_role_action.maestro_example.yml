@@ -1,0 +1,14 @@
+uuid: a71691f2-6ec5-4f5e-95ed-9eb5f089bb62
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.maestro_example
+  module:
+    - user
+id: user_remove_role_action.maestro_example
+label: 'Remove the Maestro Example role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: maestro_example

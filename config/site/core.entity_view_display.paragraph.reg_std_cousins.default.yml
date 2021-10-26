@@ -1,0 +1,61 @@
+uuid: 9be43168-b4a9-41bb-ad5b-acebaa7101d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.reg_std_cousins.field_reg_std_enroll_age
+    - field.field.paragraph.reg_std_cousins.field_reg_std_enroll_class
+    - field.field.paragraph.reg_std_cousins.field_reg_std_enroll_dob
+    - field.field.paragraph.reg_std_cousins.field_reg_std_enroll_name
+    - field.field.paragraph.reg_std_cousins.field_reg_std_enroll_rel
+    - paragraphs.paragraphs_type.reg_std_cousins
+  module:
+    - datetime
+id: paragraph.reg_std_cousins.default
+targetEntityType: paragraph
+bundle: reg_std_cousins
+mode: default
+content:
+  field_reg_std_enroll_age:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_reg_std_enroll_class:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_reg_std_enroll_dob:
+    weight: 2
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_reg_std_enroll_name:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_reg_std_enroll_rel:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

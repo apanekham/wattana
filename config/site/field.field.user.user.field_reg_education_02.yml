@@ -1,0 +1,37 @@
+uuid: 8af8119e-fcfb-43ad-bde9-050f331fde94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_education_02
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      administration_staff: administration_staff
+      accounting_staff: accounting_staff
+      teacher: teacher
+      authenticated: 0
+      students: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_education_02
+field_name: field_reg_education_02
+entity_type: user
+bundle: user
+label: 'ລະດັບການສຶກສາ 2, ສົກປີ, ຊື່ສະຖາບັນ, ສາຂາວິຊາຮຽນ'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

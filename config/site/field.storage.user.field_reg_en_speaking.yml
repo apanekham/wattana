@@ -1,0 +1,30 @@
+uuid: a1b065c3-545d-4a23-9d43-dda1d39ac790
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_reg_en_speaking
+field_name: field_reg_en_speaking
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ດີ
+      label: ດີ
+    -
+      value: ພໍໃຊ້
+      label: ພໍໃຊ້
+    -
+      value: ບໍ່ໄດ້
+      label: ບໍ່ໄດ້
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,1130 @@
+uuid: 6a852a72-8049-4d74-a996-26e315ec8ab7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.register
+    - field.field.user.user.field_reg_address
+    - field.field.user.user.field_reg_birth_address
+    - field.field.user.user.field_reg_ch_reading
+    - field.field.user.user.field_reg_ch_speaking
+    - field.field.user.user.field_reg_ch_writing
+    - field.field.user.user.field_reg_child_name
+    - field.field.user.user.field_reg_comp_com
+    - field.field.user.user.field_reg_comp_other
+    - field.field.user.user.field_reg_comp_typing
+    - field.field.user.user.field_reg_dob
+    - field.field.user.user.field_reg_doc_criminal
+    - field.field.user.user.field_reg_doc_cv
+    - field.field.user.user.field_reg_doc_edu_cert
+    - field.field.user.user.field_reg_doc_exp
+    - field.field.user.user.field_reg_doc_health
+    - field.field.user.user.field_reg_doc_id
+    - field.field.user.user.field_reg_doc_photo
+    - field.field.user.user.field_reg_education_01
+    - field.field.user.user.field_reg_education_02
+    - field.field.user.user.field_reg_education_03
+    - field.field.user.user.field_reg_en_firstname
+    - field.field.user.user.field_reg_en_nickname
+    - field.field.user.user.field_reg_en_reading
+    - field.field.user.user.field_reg_en_speaking
+    - field.field.user.user.field_reg_en_surname
+    - field.field.user.user.field_reg_en_writing
+    - field.field.user.user.field_reg_exp_01
+    - field.field.user.user.field_reg_exp_02
+    - field.field.user.user.field_reg_exp_03
+    - field.field.user.user.field_reg_father_address
+    - field.field.user.user.field_reg_father_age
+    - field.field.user.user.field_reg_father_email
+    - field.field.user.user.field_reg_father_facebook
+    - field.field.user.user.field_reg_father_home_tel
+    - field.field.user.user.field_reg_father_mobile
+    - field.field.user.user.field_reg_father_name
+    - field.field.user.user.field_reg_father_nationality
+    - field.field.user.user.field_reg_father_occupation
+    - field.field.user.user.field_reg_father_office
+    - field.field.user.user.field_reg_father_office_tel
+    - field.field.user.user.field_reg_identification_expire
+    - field.field.user.user.field_reg_identification_issue
+    - field.field.user.user.field_reg_identification_no
+    - field.field.user.user.field_reg_la_fname
+    - field.field.user.user.field_reg_la_nname
+    - field.field.user.user.field_reg_la_sname
+    - field.field.user.user.field_reg_lang_other
+    - field.field.user.user.field_reg_lang_other_reading
+    - field.field.user.user.field_reg_lang_other_speaking
+    - field.field.user.user.field_reg_lang_other_writing
+    - field.field.user.user.field_reg_marital_status
+    - field.field.user.user.field_reg_marriage
+    - field.field.user.user.field_reg_mother_address
+    - field.field.user.user.field_reg_mother_age
+    - field.field.user.user.field_reg_mother_email
+    - field.field.user.user.field_reg_mother_facebook
+    - field.field.user.user.field_reg_mother_home_tel
+    - field.field.user.user.field_reg_mother_mobile
+    - field.field.user.user.field_reg_mother_name
+    - field.field.user.user.field_reg_mother_nationality
+    - field.field.user.user.field_reg_mother_occupation
+    - field.field.user.user.field_reg_mother_office
+    - field.field.user.user.field_reg_mother_office_tel
+    - field.field.user.user.field_reg_nationality
+    - field.field.user.user.field_reg_personal_interest
+    - field.field.user.user.field_reg_phone
+    - field.field.user.user.field_reg_religious
+    - field.field.user.user.field_reg_sibling
+    - field.field.user.user.field_reg_sibling_no
+    - field.field.user.user.field_reg_spouse_kids_no
+    - field.field.user.user.field_reg_spouse_name
+    - field.field.user.user.field_reg_spouse_occupation
+    - field.field.user.user.field_reg_spouse_workplace
+    - field.field.user.user.field_reg_std_allergy
+    - field.field.user.user.field_reg_std_allergy_detial
+    - field.field.user.user.field_reg_std_cousin_enroll
+    - field.field.user.user.field_reg_std_cousin_enroll_de
+    - field.field.user.user.field_reg_std_disease
+    - field.field.user.user.field_reg_std_disease_detail
+    - field.field.user.user.field_reg_std_ethic
+    - field.field.user.user.field_reg_std_gender
+    - field.field.user.user.field_reg_std_id
+    - field.field.user.user.field_reg_std_urgent_email
+    - field.field.user.user.field_reg_std_urgent_facebook
+    - field.field.user.user.field_reg_std_urgent_rel
+    - field.field.user.user.field_reg_th_reding
+    - field.field.user.user.field_reg_th_speaking
+    - field.field.user.user.field_reg_th_writing
+    - field.field.user.user.field_reg_training_01
+    - field.field.user.user.field_reg_training_02
+    - field.field.user.user.field_reg_training_03
+    - field.field.user.user.field_reg_urgent_address
+    - field.field.user.user.field_reg_urgent_mobile
+    - field.field.user.user.field_reg_urgent_name
+    - field.field.user.user.field_reg_urgent_relationship
+    - field.field.user.user.field_reg_urgent_tel
+    - field.field.user.user.field_reg_urgent_tel_home
+    - image.style.thumbnail
+  module:
+    - datetime
+    - field_group
+    - file
+    - image
+    - paragraphs
+    - telephone
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_reg_personal_info:
+      children:
+        - field_reg_la_fname
+        - field_reg_la_sname
+        - field_reg_la_nname
+        - field_reg_en_firstname
+        - field_reg_en_surname
+        - field_reg_en_nickname
+        - field_reg_std_gender
+        - field_reg_dob
+        - field_reg_birth_address
+        - field_reg_address
+        - field_reg_nationality
+        - field_reg_std_ethic
+        - field_reg_religious
+        - field_reg_identification_no
+        - field_reg_identification_issue
+        - field_reg_identification_expire
+        - field_reg_marital_status
+        - field_reg_phone
+      parent_name: group_reg_tabs
+      weight: 2
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: ປະຫວັດສ່ວນຕົວ
+    group_reg_tabs:
+      children:
+        - group_reg_personal_info
+        - group_reg_login_details
+        - group_reg_family_info
+        - group_reg_education
+        - group_reg_exp
+        - group_reg_urgent
+        - group_reg_doc
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      region: content
+      format_settings:
+        direction: horizontal
+        width_breakpoint: 640
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: Tabs
+    group_reg_family_info:
+      children:
+        - group_reg_father
+        - group_reg_mother
+        - field_reg_sibling_no
+        - field_reg_sibling
+        - field_reg_marriage
+        - field_reg_spouse_name
+        - field_reg_spouse_occupation
+        - field_reg_spouse_workplace
+        - field_reg_spouse_kids_no
+        - field_reg_child_name
+      parent_name: group_reg_tabs
+      weight: 4
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: ປະຫວັດຄອບຄົວ
+    group_reg_login_details:
+      children:
+        - account
+      parent_name: group_reg_tabs
+      weight: 3
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Login details'
+    group_reg_education:
+      children:
+        - group_reg_education_01
+        - group_reg_training
+      parent_name: group_reg_tabs
+      weight: 5
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: ປະຫວັດການສຶກສາ
+    group_reg_education_01:
+      children:
+        - field_reg_education_01
+        - field_reg_education_02
+        - field_reg_education_03
+      parent_name: group_reg_education
+      weight: 20
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: ລະດັບການສຶກສາ
+    group_reg_training:
+      children:
+        - field_reg_training_01
+        - field_reg_training_02
+        - field_reg_training_03
+      parent_name: group_reg_education
+      weight: 21
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: ການຝຶກອົບຮົມ
+    group_reg_exp:
+      children:
+        - field_reg_exp_01
+        - field_reg_exp_02
+        - field_reg_exp_03
+        - group_reg_eng
+        - group_reg_th
+        - group_reg_ch
+        - group_reg_lang_other
+        - group_reg_comp_others
+        - field_reg_personal_interest
+      parent_name: group_reg_tabs
+      weight: 6
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: closed
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: ປະຫວັດການເຮັດວຽກ
+    group_reg_eng:
+      children:
+        - field_reg_en_reading
+        - field_reg_en_speaking
+        - field_reg_en_writing
+      parent_name: group_reg_exp
+      weight: 24
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: ຄວາມສາມາດດ້ານພາສາອັງກິດ
+    group_reg_th:
+      children:
+        - field_reg_th_reding
+        - field_reg_th_speaking
+        - field_reg_th_writing
+      parent_name: group_reg_exp
+      weight: 25
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: ຄວາມສາມາດດ້ານພາສາໄທ
+    group_reg_ch:
+      children:
+        - field_reg_ch_reading
+        - field_reg_ch_speaking
+        - field_reg_ch_writing
+      parent_name: group_reg_exp
+      weight: 26
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: ຄວາມສາມາດດ້ານພາສາຈີນ
+    group_reg_lang_other:
+      children:
+        - field_reg_lang_other
+        - field_reg_lang_other_reading
+        - field_reg_lang_other_speaking
+        - field_reg_lang_other_writing
+      parent_name: group_reg_exp
+      weight: 27
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: ຄວາມສາມາດດ້ານພາສາອື່ນໆ
+    group_reg_comp_others:
+      children:
+        - field_reg_comp_typing
+        - field_reg_comp_com
+        - field_reg_comp_other
+      parent_name: group_reg_exp
+      weight: 28
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: ຄວາມສາມາດດ້ານອື່ນໆ
+    group_reg_urgent:
+      children:
+        - field_reg_urgent_name
+        - field_reg_urgent_relationship
+        - field_reg_urgent_address
+        - field_reg_urgent_tel
+      parent_name: group_reg_tabs
+      weight: 7
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: ກໍລະນີສຸກເສີນພົວພັນ
+    group_reg_doc:
+      children:
+        - field_reg_doc_cv
+        - field_reg_doc_edu_cert
+        - field_reg_doc_id
+        - field_reg_doc_health
+        - field_reg_doc_exp
+        - field_reg_doc_criminal
+        - field_reg_doc_photo
+      parent_name: group_reg_tabs
+      weight: 8
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: ເອກະສານຄັດຕິດ
+    group_reg_father:
+      children:
+        - field_reg_father_name
+        - field_reg_father_age
+        - field_reg_father_nationality
+        - field_reg_father_occupation
+        - field_reg_father_office
+        - field_reg_father_office_tel
+        - field_reg_father_home_tel
+        - field_reg_father_mobile
+        - field_reg_father_facebook
+        - field_reg_father_address
+        - field_reg_father_email
+      parent_name: group_reg_family_info
+      weight: 6
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: ຊໍ້ມູນຂອງພໍ່
+    group_reg_mother:
+      children:
+        - field_reg_mother_name
+        - field_reg_mother_age
+        - field_reg_mother_nationality
+        - field_reg_mother_occupation
+        - field_reg_mother_office
+        - field_reg_mother_office_tel
+        - field_reg_mother_home_tel
+        - field_reg_mother_mobile
+        - field_reg_mother_facebook
+        - field_reg_mother_address
+        - field_reg_mother_email
+      parent_name: group_reg_family_info
+      weight: 7
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: ຂໍ້ມູນຂອງແມ່
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.register
+targetEntityType: user
+bundle: user
+mode: register
+content:
+  account:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_address:
+    type: string_textarea
+    weight: 16
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_birth_address:
+    type: string_textarea
+    weight: 15
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_ch_reading:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_ch_speaking:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_ch_writing:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_child_name:
+    type: paragraphs
+    weight: 15
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_reg_comp_com:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_comp_other:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_comp_typing:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_dob:
+    type: datetime_default
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_doc_criminal:
+    type: file_generic
+    weight: 10
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_reg_doc_cv:
+    type: file_generic
+    weight: 5
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_reg_doc_edu_cert:
+    type: file_generic
+    weight: 6
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_reg_doc_exp:
+    type: file_generic
+    weight: 9
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_reg_doc_health:
+    type: file_generic
+    weight: 8
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_reg_doc_id:
+    type: file_generic
+    weight: 7
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_reg_doc_photo:
+    type: image_image
+    weight: 11
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_reg_education_01:
+    type: string_textarea
+    weight: 21
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_education_02:
+    type: string_textarea
+    weight: 22
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_education_03:
+    type: string_textarea
+    weight: 23
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_en_firstname:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_en_nickname:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_en_reading:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_en_speaking:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_en_surname:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_en_writing:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_exp_01:
+    type: string_textarea
+    weight: 21
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_exp_02:
+    type: string_textarea
+    weight: 22
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_exp_03:
+    type: string_textarea
+    weight: 23
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_father_address:
+    type: string_textarea
+    weight: 16
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_father_age:
+    type: number
+    weight: 8
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_father_email:
+    type: email_default
+    weight: 17
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_father_facebook:
+    type: string_textfield
+    weight: 15
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_father_home_tel:
+    type: telephone_default
+    weight: 13
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_father_mobile:
+    type: telephone_default
+    weight: 14
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_father_name:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_father_nationality:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_father_occupation:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_father_office:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_father_office_tel:
+    type: telephone_default
+    weight: 12
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_identification_expire:
+    type: datetime_default
+    weight: 22
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_identification_issue:
+    type: string_textfield
+    weight: 21
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_identification_no:
+    type: string_textfield
+    weight: 20
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_la_fname:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_la_nname:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_la_sname:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_lang_other:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_lang_other_reading:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_lang_other_speaking:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_lang_other_writing:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_marital_status:
+    type: string_textfield
+    weight: 23
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_marriage:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_reg_mother_address:
+    type: string_textarea
+    weight: 28
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_mother_age:
+    type: number
+    weight: 20
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_mother_email:
+    type: email_default
+    weight: 29
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_mother_facebook:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_mother_home_tel:
+    type: telephone_default
+    weight: 25
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_mother_mobile:
+    type: telephone_default
+    weight: 26
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_mother_name:
+    type: string_textfield
+    weight: 19
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_mother_nationality:
+    type: string_textfield
+    weight: 21
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_mother_occupation:
+    type: string_textfield
+    weight: 22
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_mother_office:
+    type: string_textfield
+    weight: 23
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_mother_office_tel:
+    type: telephone_default
+    weight: 24
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_nationality:
+    type: string_textfield
+    weight: 17
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_personal_interest:
+    type: text_textarea
+    weight: 29
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_phone:
+    type: telephone_default
+    weight: 24
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_religious:
+    type: string_textfield
+    weight: 19
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_sibling:
+    type: paragraphs
+    weight: 9
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_reg_sibling_no:
+    type: number
+    weight: 8
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_spouse_kids_no:
+    type: number
+    weight: 14
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_spouse_name:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_spouse_occupation:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_spouse_workplace:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_std_ethic:
+    type: string_textfield
+    weight: 18
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_std_gender:
+    type: options_select
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_std_id:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_th_reding:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_th_speaking:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_th_writing:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_training_01:
+    type: string_textarea
+    weight: 22
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_training_02:
+    type: string_textarea
+    weight: 23
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_training_03:
+    type: string_textarea
+    weight: 24
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_urgent_address:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_urgent_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_urgent_relationship:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_urgent_tel:
+    type: telephone_default
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  contact: true
+  field_reg_std_allergy: true
+  field_reg_std_allergy_detial: true
+  field_reg_std_cousin_enroll: true
+  field_reg_std_cousin_enroll_de: true
+  field_reg_std_disease: true
+  field_reg_std_disease_detail: true
+  field_reg_std_urgent_email: true
+  field_reg_std_urgent_facebook: true
+  field_reg_std_urgent_rel: true
+  field_reg_urgent_mobile: true
+  field_reg_urgent_tel_home: true
+  language: true
+  path: true
+  timezone: true

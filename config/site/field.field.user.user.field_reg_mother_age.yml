@@ -1,0 +1,41 @@
+uuid: 3ed1d98c-ca7b-49e8-a8eb-1b878ffa17d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_mother_age
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      administration_staff: administration_staff
+      accounting_staff: accounting_staff
+      teacher: teacher
+      students: students
+      authenticated: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_mother_age
+field_name: field_reg_mother_age
+entity_type: user
+bundle: user
+label: ອາຍຸແມ່
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

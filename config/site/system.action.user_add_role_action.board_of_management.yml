@@ -1,0 +1,14 @@
+uuid: 87cb7f36-79d1-452d-af75-f84423969b70
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.board_of_management
+  module:
+    - user
+id: user_add_role_action.board_of_management
+label: 'Add the ຄະນະບໍລິຫານ role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: board_of_management

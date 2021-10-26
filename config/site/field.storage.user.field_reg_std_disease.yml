@@ -1,0 +1,27 @@
+uuid: c50d1c65-a225-483c-9e18-dcd18d69fcf2
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_reg_std_disease
+field_name: field_reg_std_disease
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: ມີ
+    -
+      value: '0'
+      label: ບໍ່ມີ
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

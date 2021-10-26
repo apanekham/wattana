@@ -1,0 +1,19 @@
+uuid: 6fe2afea-e49f-4fa6-8a98-874e4f51db99
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_reg_training_03
+field_name: field_reg_training_03
+entity_type: user
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

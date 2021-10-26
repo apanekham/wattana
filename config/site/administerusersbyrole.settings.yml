@@ -1,0 +1,13 @@
+roles:
+  board_of_management: safe
+  managing_director: safe
+  deputy_managing_director: safe
+  administration_staff: safe
+  accounting_staff: safe
+  teacher: safe
+  students: safe
+  parents: safe
+  demo_region_admin: unsafe
+  demo_region_user: unsafe
+_core:
+  default_config_hash: UiTY9bhUKWJOIWDlOKM3akeeyHuJJRspXETsv3SY6jw

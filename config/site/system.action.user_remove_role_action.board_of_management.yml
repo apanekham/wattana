@@ -1,0 +1,14 @@
+uuid: 086282e8-043b-413a-b199-c9c5f31dcbce
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.board_of_management
+  module:
+    - user
+id: user_remove_role_action.board_of_management
+label: 'Remove the ຄະນະບໍລິຫານ role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: board_of_management

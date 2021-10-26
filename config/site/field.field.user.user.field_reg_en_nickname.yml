@@ -1,0 +1,31 @@
+uuid: 42376196-5b94-4f42-b66e-fc652142d4c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_en_nickname
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      authenticated: authenticated
+      administration_staff: administration_staff
+      accounting_staff: accounting_staff
+      teacher: teacher
+      students: students
+      parents: 0
+    user_additional_register_form_required: null
+id: user.user.field_reg_en_nickname
+field_name: field_reg_en_nickname
+entity_type: user
+bundle: user
+label: Nickname
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

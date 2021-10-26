@@ -1,0 +1,14 @@
+uuid: 9ad0ef51-f7fc-4bf3-982f-0418a810d401
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.teacher
+  module:
+    - user
+id: user_remove_role_action.teacher
+label: 'Remove the ຄູ role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: teacher

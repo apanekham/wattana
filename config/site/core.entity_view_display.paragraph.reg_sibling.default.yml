@@ -1,0 +1,31 @@
+uuid: b318459a-585d-4a47-8c3d-f4edf6d7ddb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.reg_sibling.field_reg_sibling_age
+    - field.field.paragraph.reg_sibling.field_reg_sibling_name
+    - paragraphs.paragraphs_type.reg_sibling
+id: paragraph.reg_sibling.default
+targetEntityType: paragraph
+bundle: reg_sibling
+mode: default
+content:
+  field_reg_sibling_age:
+    weight: 1
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_reg_sibling_name:
+    weight: 0
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

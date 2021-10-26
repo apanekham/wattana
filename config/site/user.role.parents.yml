@@ -1,0 +1,9 @@
+uuid: 10615d7f-f5f3-4549-92a2-83699c3d2505
+langcode: en
+status: true
+dependencies: {  }
+id: parents
+label: ຜູ້ປົກຄອງນັກຮຽນ
+weight: 11
+is_admin: null
+permissions: {  }

@@ -1,0 +1,14 @@
+uuid: 764b2d90-a4a4-4698-b10d-3b6c187f556e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.managing_director
+  module:
+    - user
+id: user_add_role_action.managing_director
+label: 'Add the ຜູ້ອໍານວຍການ role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: managing_director

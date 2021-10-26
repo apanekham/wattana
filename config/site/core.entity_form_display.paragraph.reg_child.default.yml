@@ -1,0 +1,31 @@
+uuid: 81753805-c4a3-499b-aaf6-480880f86638
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.reg_child.field_reg_child_age
+    - field.field.paragraph.reg_child.field_reg_child_name
+    - paragraphs.paragraphs_type.reg_child
+id: paragraph.reg_child.default
+targetEntityType: paragraph
+bundle: reg_child
+mode: default
+content:
+  field_reg_child_age:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_reg_child_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

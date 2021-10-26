@@ -1,0 +1,38 @@
+uuid: d80d7939-993f-4ab1-9c22-6e4f9f88181c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_std_allergy
+  module:
+    - multiple_registration
+    - options
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      students: students
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      parents: 0
+    user_additional_register_form_required:
+      students: students
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      parents: 0
+id: user.user.field_reg_std_allergy
+field_name: field_reg_std_allergy
+entity_type: user
+bundle: user
+label: ເຄີຍແພ້ອາຫານຫຼືບໍ່
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

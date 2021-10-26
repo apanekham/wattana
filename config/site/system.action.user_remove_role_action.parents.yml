@@ -1,0 +1,14 @@
+uuid: b932c0a7-2ea1-4d68-9882-d79e25a2a21a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.parents
+  module:
+    - user
+id: user_remove_role_action.parents
+label: 'Remove the ຜູ້ປົກຄອງນັກຮຽນ role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: parents

@@ -1,0 +1,20 @@
+uuid: ac049aa7-19a6-442a-a1bb-7ae552a6d71d
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_reg_father_age
+field_name: field_reg_father_age
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

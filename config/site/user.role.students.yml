@@ -1,0 +1,9 @@
+uuid: fbf09d98-04ea-4d87-afd5-02189f557c7f
+langcode: en
+status: true
+dependencies: {  }
+id: students
+label: ນັກຮຽນ
+weight: 10
+is_admin: null
+permissions: {  }

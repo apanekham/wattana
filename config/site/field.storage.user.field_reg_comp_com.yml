@@ -1,0 +1,30 @@
+uuid: 9cd6bf9d-483a-4764-8b7d-6b5c3f86eb3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_reg_comp_com
+field_name: field_reg_comp_com
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ດີ
+      label: ດີ
+    -
+      value: ພໍໃຊ້
+      label: ພໍໃຊ້
+    -
+      value: ບໍ່ໄດ້
+      label: ບໍ່ໄດ້
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: c7952db5-3e5b-4b13-b2d2-de56f9ce6293
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_reg_std_urgent_facebook
+field_name: field_reg_std_urgent_facebook
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

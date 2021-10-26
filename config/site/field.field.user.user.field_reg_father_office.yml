@@ -1,0 +1,37 @@
+uuid: acf5152a-460e-409d-9be5-9bd76790c8fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_father_office
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      students: students
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_father_office
+field_name: field_reg_father_office
+entity_type: user
+bundle: user
+label: ບ່ອນປະຈໍາການພໍ່
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

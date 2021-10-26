@@ -1,0 +1,54 @@
+uuid: 93c4cecf-b40c-4fca-9705-dede2a292e20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_std_cousin_enroll_de
+    - paragraphs.paragraphs_type.reg_std_cousins
+  module:
+    - entity_reference_revisions
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      students: students
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_std_cousin_enroll_de
+field_name: field_reg_std_cousin_enroll_de
+entity_type: user
+bundle: user
+label: 'ລາຍຊື່ອ້າຍເອື້ອຍນ້ອງ ຫຼື ຍາດພີ່ນ້ອງເຂົ້າໂຮງຮຽນວັດທະນາ'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      reg_std_cousins: reg_std_cousins
+    target_bundles_drag_drop:
+      reg_child:
+        weight: 4
+        enabled: false
+      reg_sibling:
+        weight: 5
+        enabled: false
+      reg_std_cousins:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

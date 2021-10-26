@@ -1,0 +1,14 @@
+uuid: d0a62e57-2cff-4c0e-bb08-26404a0d469b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.administration_staff
+  module:
+    - user
+id: user_add_role_action.administration_staff
+label: 'Add the ພະນັກງານບໍລິຫານ role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administration_staff

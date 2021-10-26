@@ -1,0 +1,55 @@
+uuid: 40788609-5418-445b-a5ba-df0e1335cd60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.technical_support_request.body
+    - field.field.node.technical_support_request.field_assignee_it_use_only_
+    - field.field.node.technical_support_request.field_attachment
+    - field.field.node.technical_support_request.field_response_it_use_only_
+    - node.type.technical_support_request
+  module:
+    - file
+    - text
+    - user
+id: node.technical_support_request.default
+targetEntityType: node
+bundle: technical_support_request
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_assignee_it_use_only_:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_attachment:
+    weight: 102
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_response_it_use_only_:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

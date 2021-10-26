@@ -1,0 +1,175 @@
+uuid: 09c69270-dd61-4da5-81f0-f722ece44474
+langcode: en
+status: true
+dependencies: {  }
+id: testing01
+label: Testing01
+app_group: 0
+canvas_height: 900
+canvas_width: 800
+default_workflow_timeline_stage_count: 0
+show_details: false
+validated: true
+views_attached:
+  maestro_completed_tasks:
+    view_machine_name: maestro_completed_tasks
+    view_weight: -9
+    view_display: default;Master
+  maestro_entity_identifiers:
+    view_machine_name: maestro_entity_identifiers
+    view_weight: -10
+    view_display: 'taskconsole_display;Task Console Display'
+variables:
+  message:
+    variable_id: message
+    variable_value: '0'
+  initiator:
+    variable_id: initiator
+    variable_value: '0'
+  workflow_timeline_stage_count:
+    variable_id: workflow_timeline_stage_count
+    variable_value: ''
+  workflow_current_stage:
+    variable_id: workflow_current_stage
+    variable_value: ''
+  workflow_current_stage_message:
+    variable_id: workflow_current_stage_message
+    variable_value: ''
+initiator: null
+workflow_timeline_stage_count: null
+workflow_current_stage: null
+workflow_current_stage_message: null
+tasks:
+  start:
+    id: start
+    tasktype: MaestroStart
+    label: Start
+    nextstep: create_support_request
+    nextfalsestep: ''
+    top: '35'
+    left: '35'
+    assignby: fixed
+    assignto: engine
+  end:
+    id: end
+    tasktype: MaestroEnd
+    label: End
+    nextstep: ''
+    nextfalsestep: ''
+    top: '190'
+    left: '50'
+    assignby: fixed
+    assignto: engine
+  show_message:
+    id: show_message
+    label: 'Show Message'
+    tasktype: MaestroInteractive
+    nextstep: end
+    nextfalsestep: ''
+    top: '185'
+    left: '225'
+    assignby: fixed
+    assignto: ''
+    raphael: ''
+    to: ''
+    pointedfrom: ''
+    falsebranch: ''
+    lines: {  }
+    handler: maestro_show_message_form
+    data:
+      modal: modal
+      redirect_to: taskconsole
+    assigned: 'user:variable:message'
+    runonce: false
+    showindetail: true
+    participate_in_workflow_status_stage: false
+    workflow_status_stage_number: 0
+    workflow_status_stage_message: ''
+    notifications:
+      notification_assignment_subject: ''
+      notification_assignment: ''
+      notification_reminder_subject: ''
+      notification_reminder: ''
+      notification_escalation_subject: ''
+      notification_escalation: ''
+      reminder_after: 0
+      escalation_after: 0
+  set_assignee:
+    id: set_assignee
+    label: 'Set Assignee'
+    tasktype: MaestroSetProcessVariable
+    nextstep: show_message
+    nextfalsestep: ''
+    top: '30'
+    left: '340'
+    assignby: fixed
+    assignto: ''
+    raphael: ''
+    to: ''
+    pointedfrom: ''
+    falsebranch: ''
+    lines: {  }
+    data:
+      spv:
+        variable: message
+        method: bycontentfunction
+        variable_value: 'custom_spv_content_user_fetch:support_request,field_assignee_it_use_only_'
+    assigned: ''
+    runonce: false
+    handler: ''
+    showindetail: true
+    participate_in_workflow_status_stage: false
+    workflow_status_stage_number: 0
+    workflow_status_stage_message: ''
+    notifications:
+      notification_assignment_subject: null
+      notification_assignment: null
+      notification_reminder_subject: null
+      notification_reminder: null
+      notification_escalation_subject: null
+      notification_escalation: null
+      reminder_after: null
+      escalation_after: null
+  create_support_request:
+    id: create_support_request
+    label: 'Create support request'
+    tasktype: MaestroContentType
+    nextstep: set_assignee
+    nextfalsestep: ''
+    top: '30'
+    left: '180'
+    assignby: fixed
+    assignto: ''
+    raphael: ''
+    to: ''
+    pointedfrom: ''
+    falsebranch: ''
+    lines: {  }
+    data:
+      unique_id: support_request
+      content_type: technical_support_request
+      save_edit_later: 0
+      link_to_edit: 0
+      show_maestro_buttons_on_view: 0
+      accept_label: ''
+      reject_label: ''
+      accept_redirect_to: ''
+      reject_redirect_to: ''
+      supply_maestro_ids_in_url: 0
+      redirect_to: taskconsole
+    handler: '/node/add/technical_support_request?maestro=1'
+    assigned: 'user:variable:initiator'
+    runonce: false
+    showindetail: true
+    participate_in_workflow_status_stage: false
+    workflow_status_stage_number: 0
+    workflow_status_stage_message: ''
+    notifications:
+      notification_assignment_subject: ''
+      notification_assignment: ''
+      notification_reminder_subject: ''
+      notification_reminder: ''
+      notification_escalation_subject: ''
+      notification_escalation: ''
+      reminder_after: 0
+      escalation_after: 0

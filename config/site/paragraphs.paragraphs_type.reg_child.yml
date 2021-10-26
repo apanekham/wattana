@@ -1,0 +1,10 @@
+uuid: a361e294-a4eb-432e-8534-2991b07114a2
+langcode: en
+status: true
+dependencies: {  }
+id: reg_child
+label: ຊື່ລູກ
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,37 @@
+uuid: 42a7e71a-1817-4b9d-8635-a99896d64003
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_mother_email
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      students: students
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_mother_email
+field_name: field_reg_mother_email
+entity_type: user
+bundle: user
+label: 'Email ຂອງແມ່'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

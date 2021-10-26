@@ -1,0 +1,14 @@
+uuid: 265f2811-d39e-4230-b9c9-e9a84fbaa0fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.deputy_managing_director
+  module:
+    - user
+id: user_add_role_action.deputy_managing_director
+label: 'Add the ຮອງຜູ້ອໍານວຍການ role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: deputy_managing_director

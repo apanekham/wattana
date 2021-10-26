@@ -1,0 +1,38 @@
+uuid: efcec3cf-73e9-431a-bf5d-ebde5e20cf87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_mother_mobile
+  module:
+    - multiple_registration
+    - telephone
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      students: students
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_mother_mobile
+field_name: field_reg_mother_mobile
+entity_type: user
+bundle: user
+label: ເບີມືຖືແມ່
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

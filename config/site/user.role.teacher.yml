@@ -1,0 +1,9 @@
+uuid: 0dff1363-ddaf-4e07-94f5-0d221161a832
+langcode: en
+status: true
+dependencies: {  }
+id: teacher
+label: ຄູ
+weight: 9
+is_admin: null
+permissions: {  }

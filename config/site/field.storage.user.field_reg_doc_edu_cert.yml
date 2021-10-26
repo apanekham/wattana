@@ -1,0 +1,23 @@
+uuid: 7309ccc3-db86-4fbb-b336-f9497b662154
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - user
+id: user.field_reg_doc_edu_cert
+field_name: field_reg_doc_edu_cert
+entity_type: user
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 5
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

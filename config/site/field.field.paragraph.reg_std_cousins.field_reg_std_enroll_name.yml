@@ -1,0 +1,19 @@
+uuid: d136a07a-53b5-40d6-8840-c3c69db71f48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reg_std_enroll_name
+    - paragraphs.paragraphs_type.reg_std_cousins
+id: paragraph.reg_std_cousins.field_reg_std_enroll_name
+field_name: field_reg_std_enroll_name
+entity_type: paragraph
+bundle: reg_std_cousins
+label: 'ຊື່ ແລະ ນາມສະກຸນ'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

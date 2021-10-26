@@ -1,0 +1,14 @@
+uuid: c0fa393d-6508-4bb6-b59b-202f356b4758
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accounting_staff
+  module:
+    - user
+id: user_remove_role_action.accounting_staff
+label: 'Remove the ພະນັກງານ ບັນຊີ role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: accounting_staff

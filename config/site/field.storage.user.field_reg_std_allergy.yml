@@ -1,0 +1,27 @@
+uuid: 007c5a3d-7be7-41f0-9b57-8aac99962582
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_reg_std_allergy
+field_name: field_reg_std_allergy
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: ເຄີຍແພ້
+    -
+      value: '0'
+      label: ບໍ່ເຄີຍແພ້
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+uuid: 2bb347e8-7e49-4b3a-8e40-403ef3113dc9
+langcode: en
+status: true
+dependencies: {  }
+id: accounting_staff
+label: 'ພະນັກງານ ບັນຊີ'
+weight: 8
+is_admin: null
+permissions: {  }

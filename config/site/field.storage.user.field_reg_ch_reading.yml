@@ -1,0 +1,30 @@
+uuid: d4e492d8-f193-48a0-99de-db8d545e341b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_reg_ch_reading
+field_name: field_reg_ch_reading
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ດີ
+      label: ດີ
+    -
+      value: ພໍໃຊ້
+      label: ພໍໃຊ້
+    -
+      value: ບໍ່ໄດ້
+      label: ບໍ່ໄດ້
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

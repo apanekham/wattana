@@ -1,0 +1,23 @@
+uuid: f4248f44-11c7-47d5-895a-0e60bef1a607
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - user
+id: user.field_reg_doc_exp
+field_name: field_reg_doc_exp
+entity_type: user
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

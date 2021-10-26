@@ -1,0 +1,31 @@
+uuid: 86b73fe0-b489-4db2-a6e0-f9674ebad1b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_en_firstname
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      authenticated: authenticated
+      administration_staff: administration_staff
+      accounting_staff: accounting_staff
+      teacher: teacher
+      students: students
+      parents: parents
+    user_additional_register_form_required: null
+id: user.user.field_reg_en_firstname
+field_name: field_reg_en_firstname
+entity_type: user
+bundle: user
+label: Firstname
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: d9e88380-0187-43da-a7b9-1caf809ee741
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.managing_director
+  module:
+    - user
+id: user_remove_role_action.managing_director
+label: 'Remove the ຜູ້ອໍານວຍການ role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: managing_director

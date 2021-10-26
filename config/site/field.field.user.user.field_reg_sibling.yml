@@ -1,0 +1,48 @@
+uuid: fce26563-cecd-4c45-8c1b-24cdb26d2832
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_sibling
+    - paragraphs.paragraphs_type.reg_sibling
+  module:
+    - entity_reference_revisions
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      administration_staff: administration_staff
+      accounting_staff: accounting_staff
+      teacher: teacher
+      authenticated: 0
+      students: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_sibling
+field_name: field_reg_sibling
+entity_type: user
+bundle: user
+label: ລາຍຊື່ພີ່ນ້ອງຮ່ວມກັນ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      reg_sibling: reg_sibling
+    target_bundles_drag_drop:
+      reg_sibling:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

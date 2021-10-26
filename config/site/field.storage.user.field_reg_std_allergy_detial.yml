@@ -1,0 +1,19 @@
+uuid: d885042d-e8a1-40ad-9197-dc950f0b8d76
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.field_reg_std_allergy_detial
+field_name: field_reg_std_allergy_detial
+entity_type: user
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

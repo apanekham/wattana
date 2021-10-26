@@ -1,0 +1,31 @@
+uuid: 3a9dbe57-7c3b-4d4e-8ffc-9ab6649bdf2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.reg_sibling.field_reg_sibling_age
+    - field.field.paragraph.reg_sibling.field_reg_sibling_name
+    - paragraphs.paragraphs_type.reg_sibling
+id: paragraph.reg_sibling.default
+targetEntityType: paragraph
+bundle: reg_sibling
+mode: default
+content:
+  field_reg_sibling_age:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_reg_sibling_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

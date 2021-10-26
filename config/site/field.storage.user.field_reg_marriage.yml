@@ -1,0 +1,18 @@
+uuid: a73c4b4c-ce4d-4386-a466-834c1edf333a
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_reg_marriage
+field_name: field_reg_marriage
+entity_type: user
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

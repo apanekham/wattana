@@ -1,0 +1,14 @@
+uuid: c5d609ea-0c15-471a-b10e-2e01ab4379e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.teacher
+  module:
+    - user
+id: user_add_role_action.teacher
+label: 'Add the ຄູ role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: teacher

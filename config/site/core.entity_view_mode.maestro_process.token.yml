@@ -1,0 +1,10 @@
+uuid: 09994adb-9fc6-461f-b1b5-cd09d21d0289
+langcode: en
+status: true
+dependencies:
+  module:
+    - maestro
+id: maestro_process.token
+label: Token
+targetEntityType: maestro_process
+cache: true

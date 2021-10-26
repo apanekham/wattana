@@ -1,0 +1,20 @@
+uuid: 5a27d30f-0800-4828-8c9d-1c484dfdbaf0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_assignee_it_use_only_
+field_name: field_assignee_it_use_only_
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

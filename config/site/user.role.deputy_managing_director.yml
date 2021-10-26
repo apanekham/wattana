@@ -1,0 +1,9 @@
+uuid: 58d06144-054e-42b8-ab18-c59ef921cdae
+langcode: en
+status: true
+dependencies: {  }
+id: deputy_managing_director
+label: ຮອງຜູ້ອໍານວຍການ
+weight: 6
+is_admin: null
+permissions: {  }

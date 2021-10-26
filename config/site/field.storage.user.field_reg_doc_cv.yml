@@ -1,0 +1,23 @@
+uuid: 90708c5a-49c4-4f9d-bf75-6f9f0d733563
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - user
+id: user.field_reg_doc_cv
+field_name: field_reg_doc_cv
+entity_type: user
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

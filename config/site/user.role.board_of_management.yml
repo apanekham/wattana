@@ -1,0 +1,9 @@
+uuid: 16e421dc-cf8e-4193-bee9-9bf512a7daae
+langcode: en
+status: true
+dependencies: {  }
+id: board_of_management
+label: ຄະນະບໍລິຫານ
+weight: 4
+is_admin: null
+permissions: {  }

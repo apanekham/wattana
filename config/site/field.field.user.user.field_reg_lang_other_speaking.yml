@@ -1,0 +1,38 @@
+uuid: a3024c61-18fe-4666-a4eb-18e9f4fd5af0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_lang_other_speaking
+  module:
+    - multiple_registration
+    - options
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      administration_staff: administration_staff
+      accounting_staff: accounting_staff
+      teacher: teacher
+      authenticated: 0
+      students: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_lang_other_speaking
+field_name: field_reg_lang_other_speaking
+entity_type: user
+bundle: user
+label: ການເວົ້າ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,58 @@
+uuid: 79301146-f304-4b4d-92fc-1f66a54a6cd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.reg_std_cousins.field_reg_std_enroll_age
+    - field.field.paragraph.reg_std_cousins.field_reg_std_enroll_class
+    - field.field.paragraph.reg_std_cousins.field_reg_std_enroll_dob
+    - field.field.paragraph.reg_std_cousins.field_reg_std_enroll_name
+    - field.field.paragraph.reg_std_cousins.field_reg_std_enroll_rel
+    - paragraphs.paragraphs_type.reg_std_cousins
+  module:
+    - datetime
+id: paragraph.reg_std_cousins.default
+targetEntityType: paragraph
+bundle: reg_std_cousins
+mode: default
+content:
+  field_reg_std_enroll_age:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_reg_std_enroll_class:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_std_enroll_dob:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_reg_std_enroll_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_std_enroll_rel:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,14 @@
+uuid: f1e6b7a2-5fcf-4fee-8658-d2bf481e2197
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.parents
+  module:
+    - user
+id: user_add_role_action.parents
+label: 'Add the ຜູ້ປົກຄອງນັກຮຽນ role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: parents

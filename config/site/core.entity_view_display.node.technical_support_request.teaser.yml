@@ -1,0 +1,36 @@
+uuid: d00aa9aa-8127-44cd-a568-d2a2a71b6a66
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.technical_support_request.body
+    - field.field.node.technical_support_request.field_assignee_it_use_only_
+    - field.field.node.technical_support_request.field_attachment
+    - field.field.node.technical_support_request.field_response_it_use_only_
+    - node.type.technical_support_request
+  module:
+    - text
+    - user
+id: node.technical_support_request.teaser
+targetEntityType: node
+bundle: technical_support_request
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_assignee_it_use_only_: true
+  field_attachment: true
+  field_response_it_use_only_: true

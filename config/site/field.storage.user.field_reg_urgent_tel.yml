@@ -1,0 +1,19 @@
+uuid: 69c8744c-5685-4546-82e1-cf5a64db7e8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - telephone
+    - user
+id: user.field_reg_urgent_tel
+field_name: field_reg_urgent_tel
+entity_type: user
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

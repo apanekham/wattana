@@ -1,0 +1,23 @@
+uuid: 14b7263f-ed0b-41a9-83e5-5d1afbe80f7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reg_child_age
+    - paragraphs.paragraphs_type.reg_child
+id: paragraph.reg_child.field_reg_child_age
+field_name: field_reg_child_age
+entity_type: paragraph
+bundle: reg_child
+label: ອາຍຸ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

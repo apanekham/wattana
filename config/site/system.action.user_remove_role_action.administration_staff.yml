@@ -1,0 +1,14 @@
+uuid: ec8d67a0-7ced-4c1e-b09a-d505e857dcb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.administration_staff
+  module:
+    - user
+id: user_remove_role_action.administration_staff
+label: 'Remove the ພະນັກງານບໍລິຫານ role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administration_staff

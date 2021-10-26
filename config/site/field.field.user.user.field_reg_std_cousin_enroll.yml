@@ -1,0 +1,40 @@
+uuid: 04dfbab9-45a8-40ca-9181-b47f2135ff87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_std_cousin_enroll
+  module:
+    - multiple_registration
+    - options
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      students: students
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_std_cousin_enroll
+field_name: field_reg_std_cousin_enroll
+entity_type: user
+bundle: user
+label: 'ມີອ້າຍເອື້ອຍນ້ອງ ຫຼື ຍາດພີ່ນ້ອງເຂົ້າໂຮງຮຽນວັດທະນາບໍ?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

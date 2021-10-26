@@ -1,0 +1,23 @@
+uuid: cc9dbf25-3156-4303-aa23-bae6969b7dff
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - user
+id: user.field_reg_doc_criminal
+field_name: field_reg_doc_criminal
+entity_type: user
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
