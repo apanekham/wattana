@@ -1,0 +1,37 @@
+uuid: 1559dc0f-9768-49c1-866c-c4c495e7d8b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_reg_std_previous_sch_name
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      students: students
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      parents: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
+      parents: 0
+id: user.user.field_reg_std_previous_sch_name
+field_name: field_reg_std_previous_sch_name
+entity_type: user
+bundle: user
+label: 'ຖ້າເຄີຍ ກະລຸນາລະບຸຊື່ໂຮງຮຽນ'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

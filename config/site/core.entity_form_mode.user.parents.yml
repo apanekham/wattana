@@ -1,0 +1,10 @@
+uuid: 07b6ee64-568b-4f5b-b13a-0478615fe4b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.parents
+label: parents
+targetEntityType: user
+cache: true

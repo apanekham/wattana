@@ -12,7 +12,7 @@ multiple_registration_form_mode_edit_students: student
 multiple_registration_path_parents: register/parent
 multiple_registration_url_parents: /user/register/parents
 multiple_registration_hidden_parents: 1
-multiple_registration_form_mode_register_parents: register
+multiple_registration_form_mode_register_parents: parents
 multiple_registration_form_mode_edit_parents: default
 multiple_registration_path_administration_staff: register/admin-staff
 multiple_registration_url_administration_staff: /user/register/administration_staff

@@ -1,0 +1,309 @@
+uuid: ca4ee767-a657-4547-af11-8bab6712592e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.parents
+    - field.field.user.user.field_reg_address
+    - field.field.user.user.field_reg_birth_address
+    - field.field.user.user.field_reg_ch_reading
+    - field.field.user.user.field_reg_ch_speaking
+    - field.field.user.user.field_reg_ch_writing
+    - field.field.user.user.field_reg_child_name
+    - field.field.user.user.field_reg_comp_com
+    - field.field.user.user.field_reg_comp_other
+    - field.field.user.user.field_reg_comp_typing
+    - field.field.user.user.field_reg_dob
+    - field.field.user.user.field_reg_doc_criminal
+    - field.field.user.user.field_reg_doc_cv
+    - field.field.user.user.field_reg_doc_edu_cert
+    - field.field.user.user.field_reg_doc_exp
+    - field.field.user.user.field_reg_doc_health
+    - field.field.user.user.field_reg_doc_id
+    - field.field.user.user.field_reg_doc_photo
+    - field.field.user.user.field_reg_education_01
+    - field.field.user.user.field_reg_education_02
+    - field.field.user.user.field_reg_education_03
+    - field.field.user.user.field_reg_en_firstname
+    - field.field.user.user.field_reg_en_nickname
+    - field.field.user.user.field_reg_en_reading
+    - field.field.user.user.field_reg_en_speaking
+    - field.field.user.user.field_reg_en_surname
+    - field.field.user.user.field_reg_en_writing
+    - field.field.user.user.field_reg_exp_01
+    - field.field.user.user.field_reg_exp_02
+    - field.field.user.user.field_reg_exp_03
+    - field.field.user.user.field_reg_father_address
+    - field.field.user.user.field_reg_father_age
+    - field.field.user.user.field_reg_father_email
+    - field.field.user.user.field_reg_father_facebook
+    - field.field.user.user.field_reg_father_home_tel
+    - field.field.user.user.field_reg_father_mobile
+    - field.field.user.user.field_reg_father_name
+    - field.field.user.user.field_reg_father_nationality
+    - field.field.user.user.field_reg_father_occupation
+    - field.field.user.user.field_reg_father_office
+    - field.field.user.user.field_reg_father_office_tel
+    - field.field.user.user.field_reg_identification_expire
+    - field.field.user.user.field_reg_identification_issue
+    - field.field.user.user.field_reg_identification_no
+    - field.field.user.user.field_reg_la_fname
+    - field.field.user.user.field_reg_la_nname
+    - field.field.user.user.field_reg_la_sname
+    - field.field.user.user.field_reg_lang_other
+    - field.field.user.user.field_reg_lang_other_reading
+    - field.field.user.user.field_reg_lang_other_speaking
+    - field.field.user.user.field_reg_lang_other_writing
+    - field.field.user.user.field_reg_marital_status
+    - field.field.user.user.field_reg_marriage
+    - field.field.user.user.field_reg_mother_address
+    - field.field.user.user.field_reg_mother_age
+    - field.field.user.user.field_reg_mother_email
+    - field.field.user.user.field_reg_mother_facebook
+    - field.field.user.user.field_reg_mother_home_tel
+    - field.field.user.user.field_reg_mother_mobile
+    - field.field.user.user.field_reg_mother_name
+    - field.field.user.user.field_reg_mother_nationality
+    - field.field.user.user.field_reg_mother_occupation
+    - field.field.user.user.field_reg_mother_office
+    - field.field.user.user.field_reg_mother_office_tel
+    - field.field.user.user.field_reg_nationality
+    - field.field.user.user.field_reg_personal_interest
+    - field.field.user.user.field_reg_phone
+    - field.field.user.user.field_reg_religious
+    - field.field.user.user.field_reg_sibling
+    - field.field.user.user.field_reg_sibling_no
+    - field.field.user.user.field_reg_spouse_kids_no
+    - field.field.user.user.field_reg_spouse_name
+    - field.field.user.user.field_reg_spouse_occupation
+    - field.field.user.user.field_reg_spouse_workplace
+    - field.field.user.user.field_reg_std_agree_activity
+    - field.field.user.user.field_reg_std_agree_sm
+    - field.field.user.user.field_reg_std_allergy
+    - field.field.user.user.field_reg_std_allergy_detial
+    - field.field.user.user.field_reg_std_cousin_enroll
+    - field.field.user.user.field_reg_std_cousin_enroll_de
+    - field.field.user.user.field_reg_std_disease
+    - field.field.user.user.field_reg_std_disease_detail
+    - field.field.user.user.field_reg_std_ethic
+    - field.field.user.user.field_reg_std_gender
+    - field.field.user.user.field_reg_std_id
+    - field.field.user.user.field_reg_std_pickup
+    - field.field.user.user.field_reg_std_previous_class
+    - field.field.user.user.field_reg_std_previous_docs
+    - field.field.user.user.field_reg_std_previous_sch
+    - field.field.user.user.field_reg_std_previous_sch_name
+    - field.field.user.user.field_reg_std_urgent_email
+    - field.field.user.user.field_reg_std_urgent_facebook
+    - field.field.user.user.field_reg_std_urgent_rel
+    - field.field.user.user.field_reg_th_reding
+    - field.field.user.user.field_reg_th_speaking
+    - field.field.user.user.field_reg_th_writing
+    - field.field.user.user.field_reg_training_01
+    - field.field.user.user.field_reg_training_02
+    - field.field.user.user.field_reg_training_03
+    - field.field.user.user.field_reg_urgent_address
+    - field.field.user.user.field_reg_urgent_mobile
+    - field.field.user.user.field_reg_urgent_name
+    - field.field.user.user.field_reg_urgent_relationship
+    - field.field.user.user.field_reg_urgent_tel
+    - field.field.user.user.field_reg_urgent_tel_home
+  module:
+    - telephone
+    - user
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.parents
+targetEntityType: user
+bundle: user
+mode: parents
+content:
+  account:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_address:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_reg_en_firstname:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_en_nickname:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_en_surname:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_la_fname:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_la_nname:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_la_sname:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_std_urgent_email:
+    type: email_default
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_std_urgent_facebook:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_urgent_mobile:
+    weight: 10
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_reg_urgent_tel_home:
+    type: telephone_default
+    weight: 9
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  contact: true
+  field_reg_birth_address: true
+  field_reg_ch_reading: true
+  field_reg_ch_speaking: true
+  field_reg_ch_writing: true
+  field_reg_child_name: true
+  field_reg_comp_com: true
+  field_reg_comp_other: true
+  field_reg_comp_typing: true
+  field_reg_dob: true
+  field_reg_doc_criminal: true
+  field_reg_doc_cv: true
+  field_reg_doc_edu_cert: true
+  field_reg_doc_exp: true
+  field_reg_doc_health: true
+  field_reg_doc_id: true
+  field_reg_doc_photo: true
+  field_reg_education_01: true
+  field_reg_education_02: true
+  field_reg_education_03: true
+  field_reg_en_reading: true
+  field_reg_en_speaking: true
+  field_reg_en_writing: true
+  field_reg_exp_01: true
+  field_reg_exp_02: true
+  field_reg_exp_03: true
+  field_reg_father_address: true
+  field_reg_father_age: true
+  field_reg_father_email: true
+  field_reg_father_facebook: true
+  field_reg_father_home_tel: true
+  field_reg_father_mobile: true
+  field_reg_father_name: true
+  field_reg_father_nationality: true
+  field_reg_father_occupation: true
+  field_reg_father_office: true
+  field_reg_father_office_tel: true
+  field_reg_identification_expire: true
+  field_reg_identification_issue: true
+  field_reg_identification_no: true
+  field_reg_lang_other: true
+  field_reg_lang_other_reading: true
+  field_reg_lang_other_speaking: true
+  field_reg_lang_other_writing: true
+  field_reg_marital_status: true
+  field_reg_marriage: true
+  field_reg_mother_address: true
+  field_reg_mother_age: true
+  field_reg_mother_email: true
+  field_reg_mother_facebook: true
+  field_reg_mother_home_tel: true
+  field_reg_mother_mobile: true
+  field_reg_mother_name: true
+  field_reg_mother_nationality: true
+  field_reg_mother_occupation: true
+  field_reg_mother_office: true
+  field_reg_mother_office_tel: true
+  field_reg_nationality: true
+  field_reg_personal_interest: true
+  field_reg_phone: true
+  field_reg_religious: true
+  field_reg_sibling: true
+  field_reg_sibling_no: true
+  field_reg_spouse_kids_no: true
+  field_reg_spouse_name: true
+  field_reg_spouse_occupation: true
+  field_reg_spouse_workplace: true
+  field_reg_std_agree_activity: true
+  field_reg_std_agree_sm: true
+  field_reg_std_allergy: true
+  field_reg_std_allergy_detial: true
+  field_reg_std_cousin_enroll: true
+  field_reg_std_cousin_enroll_de: true
+  field_reg_std_disease: true
+  field_reg_std_disease_detail: true
+  field_reg_std_ethic: true
+  field_reg_std_gender: true
+  field_reg_std_id: true
+  field_reg_std_pickup: true
+  field_reg_std_previous_class: true
+  field_reg_std_previous_docs: true
+  field_reg_std_previous_sch: true
+  field_reg_std_previous_sch_name: true
+  field_reg_std_urgent_rel: true
+  field_reg_th_reding: true
+  field_reg_th_speaking: true
+  field_reg_th_writing: true
+  field_reg_training_01: true
+  field_reg_training_02: true
+  field_reg_training_03: true
+  field_reg_urgent_address: true
+  field_reg_urgent_name: true
+  field_reg_urgent_relationship: true
+  field_reg_urgent_tel: true
+  language: true
+  path: true
+  timezone: true

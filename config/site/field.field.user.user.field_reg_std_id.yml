@@ -12,10 +12,16 @@ third_party_settings:
     user_additional_register_form:
       students: students
       authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
       parents: 0
     user_additional_register_form_required:
-      students: students
       authenticated: 0
+      administration_staff: 0
+      accounting_staff: 0
+      teacher: 0
+      students: 0
       parents: 0
 id: user.user.field_reg_std_id
 field_name: field_reg_std_id

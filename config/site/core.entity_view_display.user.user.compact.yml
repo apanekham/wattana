@@ -77,6 +77,8 @@ dependencies:
     - field.field.user.user.field_reg_spouse_name
     - field.field.user.user.field_reg_spouse_occupation
     - field.field.user.user.field_reg_spouse_workplace
+    - field.field.user.user.field_reg_std_agree_activity
+    - field.field.user.user.field_reg_std_agree_sm
     - field.field.user.user.field_reg_std_allergy
     - field.field.user.user.field_reg_std_allergy_detial
     - field.field.user.user.field_reg_std_cousin_enroll
@@ -86,6 +88,11 @@ dependencies:
     - field.field.user.user.field_reg_std_ethic
     - field.field.user.user.field_reg_std_gender
     - field.field.user.user.field_reg_std_id
+    - field.field.user.user.field_reg_std_pickup
+    - field.field.user.user.field_reg_std_previous_class
+    - field.field.user.user.field_reg_std_previous_docs
+    - field.field.user.user.field_reg_std_previous_sch
+    - field.field.user.user.field_reg_std_previous_sch_name
     - field.field.user.user.field_reg_std_urgent_email
     - field.field.user.user.field_reg_std_urgent_facebook
     - field.field.user.user.field_reg_std_urgent_rel
@@ -184,6 +191,8 @@ hidden:
   field_reg_spouse_name: true
   field_reg_spouse_occupation: true
   field_reg_spouse_workplace: true
+  field_reg_std_agree_activity: true
+  field_reg_std_agree_sm: true
   field_reg_std_allergy: true
   field_reg_std_allergy_detial: true
   field_reg_std_cousin_enroll: true
@@ -193,6 +202,11 @@ hidden:
   field_reg_std_ethic: true
   field_reg_std_gender: true
   field_reg_std_id: true
+  field_reg_std_pickup: true
+  field_reg_std_previous_class: true
+  field_reg_std_previous_docs: true
+  field_reg_std_previous_sch: true
+  field_reg_std_previous_sch_name: true
   field_reg_std_urgent_email: true
   field_reg_std_urgent_facebook: true
   field_reg_std_urgent_rel: true

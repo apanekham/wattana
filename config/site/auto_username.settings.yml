@@ -1,13 +1,13 @@
-aun_pattern: '[user:field_reg_en_surname][user:field_reg_en_nickname][user:field_reg_en_firstname]'
-aun_php: 0
-aun_update_on_edit: 0
-aun_separator: '-'
-aun_case: '0'
+aun_pattern: "<?php \r\n  $fname = strtolower(\"[user:field_reg_en_firstname]\");\r\n  $lname = strtolower(\"[user:field_reg_en_surname]\");\r\n  echo $fname.$lname;\r\n?>"
+aun_php: 1
+aun_update_on_edit: 1
+aun_separator: ''
+aun_case: '1'
 aun_max_length: '60'
 aun_max_component_length: '60'
 aun_transliterate: false
-aun_reduce_ascii: 0
-aun_replace_whitespace: 0
+aun_reduce_ascii: 1
+aun_replace_whitespace: 1
 aun_ignore_words: ''
 _core:
   default_config_hash: cRB3DSMYqngvGAX0vG3k7WjwHMwWJZDWCOcUtt8xM4E
@@ -16,7 +16,7 @@ aun_punctuation_quotes: '0'
 aun_punctuation_backtick: '0'
 aun_punctuation_comma: '0'
 aun_punctuation_period: '0'
-aun_punctuation_hyphen: '1'
+aun_punctuation_hyphen: '0'
 aun_punctuation_underscore: '0'
 aun_punctuation_colon: '0'
 aun_punctuation_semicolon: '0'

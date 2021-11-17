@@ -77,6 +77,8 @@ dependencies:
     - field.field.user.user.field_reg_spouse_name
     - field.field.user.user.field_reg_spouse_occupation
     - field.field.user.user.field_reg_spouse_workplace
+    - field.field.user.user.field_reg_std_agree_activity
+    - field.field.user.user.field_reg_std_agree_sm
     - field.field.user.user.field_reg_std_allergy
     - field.field.user.user.field_reg_std_allergy_detial
     - field.field.user.user.field_reg_std_cousin_enroll
@@ -86,6 +88,11 @@ dependencies:
     - field.field.user.user.field_reg_std_ethic
     - field.field.user.user.field_reg_std_gender
     - field.field.user.user.field_reg_std_id
+    - field.field.user.user.field_reg_std_pickup
+    - field.field.user.user.field_reg_std_previous_class
+    - field.field.user.user.field_reg_std_previous_docs
+    - field.field.user.user.field_reg_std_previous_sch
+    - field.field.user.user.field_reg_std_previous_sch_name
     - field.field.user.user.field_reg_std_urgent_email
     - field.field.user.user.field_reg_std_urgent_facebook
     - field.field.user.user.field_reg_std_urgent_rel
@@ -119,6 +126,7 @@ third_party_settings:
         - group_std_login_details
         - group_reg_std_family_info
         - group_reg_std_general_info
+        - group_reg_std_attached_docs
       parent_name: ''
       weight: 1
       format_type: tabs
@@ -280,6 +288,11 @@ third_party_settings:
         - field_reg_std_disease_detail
         - field_reg_std_cousin_enroll
         - field_reg_std_cousin_enroll_de
+        - field_reg_std_previous_sch
+        - field_reg_std_previous_sch_name
+        - field_reg_std_previous_class
+        - field_reg_std_previous_docs
+        - group_reg_std_parent_agree
       parent_name: group_std_tabs
       weight: 24
       format_type: tab
@@ -292,6 +305,40 @@ third_party_settings:
         formatter: closed
         required_fields: true
       label: ຂໍ້ມູນທົ່ວໄປຂອງນັກຮຽນ
+    group_reg_std_parent_agree:
+      children:
+        - field_reg_std_agree_activity
+        - field_reg_std_agree_sm
+      parent_name: group_reg_std_general_info
+      weight: 16
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: ການຍິນຍອມຂອງຜູ້ປົກຄອງ
+    group_reg_std_attached_docs:
+      children:
+        - field_reg_doc_photo
+        - field_reg_doc_health
+        - field_reg_doc_id
+        - field_reg_std_pickup
+      parent_name: group_std_tabs
+      weight: 27
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: ເອກະສານຕິດຂັດ
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
 id: user.user.student
@@ -326,22 +373,15 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_reg_doc_edu_cert:
-    weight: 2
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: file_generic
-    region: content
   field_reg_doc_health:
-    weight: 4
+    type: file_generic
+    weight: 6
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_reg_doc_id:
-    weight: 3
+    weight: 7
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
@@ -579,6 +619,18 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_reg_std_agree_activity:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_std_agree_sm:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_reg_std_allergy:
     type: options_select
     weight: 6
@@ -653,6 +705,43 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_reg_std_pickup:
+    type: image_image
+    weight: 8
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_reg_std_previous_class:
+    type: string_textfield
+    weight: 14
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reg_std_previous_docs:
+    type: file_generic
+    weight: 15
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_reg_std_previous_sch:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reg_std_previous_sch_name:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_reg_std_urgent_email:
     type: email_default
     weight: 9
@@ -725,6 +814,7 @@ hidden:
   field_reg_comp_typing: true
   field_reg_doc_criminal: true
   field_reg_doc_cv: true
+  field_reg_doc_edu_cert: true
   field_reg_doc_exp: true
   field_reg_education_01: true
   field_reg_education_02: true

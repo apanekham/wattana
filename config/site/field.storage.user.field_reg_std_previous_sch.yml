@@ -1,0 +1,27 @@
+uuid: 2a6d3303-a6f4-4aca-a893-74f3334abb1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_reg_std_previous_sch
+field_name: field_reg_std_previous_sch
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: ເຄີຍ
+    -
+      value: '0'
+      label: ບໍ່ເຄີຍ
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

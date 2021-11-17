@@ -47,7 +47,7 @@ field_name: field_reg_doc_id
 entity_type: user
 bundle: user
 label: 'ໃບຢັ້ງຢືນທີ່ຢູ່ / ບັດປະຊາຊົນ / ສໍາມະໂນຄົວ'
-description: ''
+description: 'ສຳລັບນັກຮຽນໃໝ່: ສຳເນົາປື້ມສຳມະໂນຄົວ ຫຼື ໃບແຈ້ງເກີດ 1 ສະບັບ '
 required: false
 translatable: false
 default_value: {  }

@@ -76,6 +76,8 @@ dependencies:
     - field.field.user.user.field_reg_spouse_name
     - field.field.user.user.field_reg_spouse_occupation
     - field.field.user.user.field_reg_spouse_workplace
+    - field.field.user.user.field_reg_std_agree_activity
+    - field.field.user.user.field_reg_std_agree_sm
     - field.field.user.user.field_reg_std_allergy
     - field.field.user.user.field_reg_std_allergy_detial
     - field.field.user.user.field_reg_std_cousin_enroll
@@ -85,6 +87,11 @@ dependencies:
     - field.field.user.user.field_reg_std_ethic
     - field.field.user.user.field_reg_std_gender
     - field.field.user.user.field_reg_std_id
+    - field.field.user.user.field_reg_std_pickup
+    - field.field.user.user.field_reg_std_previous_class
+    - field.field.user.user.field_reg_std_previous_docs
+    - field.field.user.user.field_reg_std_previous_sch
+    - field.field.user.user.field_reg_std_previous_sch_name
     - field.field.user.user.field_reg_std_urgent_email
     - field.field.user.user.field_reg_std_urgent_facebook
     - field.field.user.user.field_reg_std_urgent_rel
@@ -756,6 +763,18 @@ content:
           bundle: user
     type: string_textfield
     region: content
+  field_reg_std_agree_activity:
+    weight: 108
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_reg_std_agree_sm:
+    weight: 109
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_reg_std_allergy:
     weight: 98
     settings: {  }
@@ -874,6 +893,91 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reg_std_pickup:
+    weight: 110
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_reg_std_previous_class:
+    weight: 106
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        33ad1519-4168-46eb-ae6d-911bc0be28ae:
+          dependee: field_reg_std_previous_sch
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 2
+            value: ''
+            values: '1'
+            value_form: {  }
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: user
+          bundle: user
+    type: string_textfield
+    region: content
+  field_reg_std_previous_docs:
+    weight: 107
+    settings:
+      progress_indicator: throbber
+    third_party_settings:
+      conditional_fields:
+        5170cb0f-62fb-4603-abaf-c7ce42b5d03e:
+          dependee: field_reg_std_previous_sch
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 2
+            value: ''
+            values: '1'
+            value_form: {  }
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: user
+          bundle: user
+    type: file_generic
+    region: content
+  field_reg_std_previous_sch:
+    weight: 104
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_reg_std_previous_sch_name:
+    weight: 105
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        a1bd8c38-7e7f-482b-b893-7091ca472917:
+          dependee: field_reg_std_previous_sch
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 2
+            value: ''
+            values: '1'
+            value_form: {  }
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: user
+          bundle: user
     type: string_textfield
     region: content
   field_reg_std_urgent_email:

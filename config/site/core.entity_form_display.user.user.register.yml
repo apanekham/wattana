@@ -77,6 +77,8 @@ dependencies:
     - field.field.user.user.field_reg_spouse_name
     - field.field.user.user.field_reg_spouse_occupation
     - field.field.user.user.field_reg_spouse_workplace
+    - field.field.user.user.field_reg_std_agree_activity
+    - field.field.user.user.field_reg_std_agree_sm
     - field.field.user.user.field_reg_std_allergy
     - field.field.user.user.field_reg_std_allergy_detial
     - field.field.user.user.field_reg_std_cousin_enroll
@@ -86,6 +88,11 @@ dependencies:
     - field.field.user.user.field_reg_std_ethic
     - field.field.user.user.field_reg_std_gender
     - field.field.user.user.field_reg_std_id
+    - field.field.user.user.field_reg_std_pickup
+    - field.field.user.user.field_reg_std_previous_class
+    - field.field.user.user.field_reg_std_previous_docs
+    - field.field.user.user.field_reg_std_previous_sch
+    - field.field.user.user.field_reg_std_previous_sch_name
     - field.field.user.user.field_reg_std_urgent_email
     - field.field.user.user.field_reg_std_urgent_facebook
     - field.field.user.user.field_reg_std_urgent_rel
@@ -154,7 +161,6 @@ third_party_settings:
         - group_reg_family_info
         - group_reg_education
         - group_reg_exp
-        - group_reg_urgent
         - group_reg_doc
       parent_name: ''
       weight: 1
@@ -179,6 +185,7 @@ third_party_settings:
         - field_reg_spouse_workplace
         - field_reg_spouse_kids_no
         - field_reg_child_name
+        - group_reg_urgent
       parent_name: group_reg_tabs
       weight: 4
       format_type: tab
@@ -211,7 +218,7 @@ third_party_settings:
         - group_reg_education_01
         - group_reg_training
       parent_name: group_reg_tabs
-      weight: 5
+      weight: 6
       format_type: tab
       region: content
       format_settings:
@@ -266,7 +273,7 @@ third_party_settings:
         - group_reg_comp_others
         - field_reg_personal_interest
       parent_name: group_reg_tabs
-      weight: 6
+      weight: 7
       format_type: tab
       region: content
       format_settings:
@@ -364,9 +371,9 @@ third_party_settings:
         - field_reg_urgent_relationship
         - field_reg_urgent_address
         - field_reg_urgent_tel
-      parent_name: group_reg_tabs
-      weight: 7
-      format_type: tab
+      parent_name: group_reg_family_info
+      weight: 16
+      format_type: fieldset
       region: content
       format_settings:
         show_empty_fields: false
@@ -1114,12 +1121,19 @@ content:
     third_party_settings: {  }
 hidden:
   contact: true
+  field_reg_std_agree_activity: true
+  field_reg_std_agree_sm: true
   field_reg_std_allergy: true
   field_reg_std_allergy_detial: true
   field_reg_std_cousin_enroll: true
   field_reg_std_cousin_enroll_de: true
   field_reg_std_disease: true
   field_reg_std_disease_detail: true
+  field_reg_std_pickup: true
+  field_reg_std_previous_class: true
+  field_reg_std_previous_docs: true
+  field_reg_std_previous_sch: true
+  field_reg_std_previous_sch_name: true
   field_reg_std_urgent_email: true
   field_reg_std_urgent_facebook: true
   field_reg_std_urgent_rel: true
