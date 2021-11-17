@@ -389,7 +389,9 @@ class AutoUsernameSettingsForm extends ConfigFormBase {
    */
   public static function autoUsernamePatternprocessor($account) {
     $output = '';
-    $pattern = \Drupal::state()->get('aun_pattern', '');
+    $config = \Drupal::config('auto_username.settings');
++   $pattern = $config->get('aun_pattern');
+
     if (trim($pattern)) {
       $pattern_array = explode('\n', trim($pattern));
       $token_service = \Drupal::token();
@@ -406,7 +408,7 @@ class AutoUsernameSettingsForm extends ConfigFormBase {
       if ($output === $pattern_tokens_removed) {
         return '';
       }
-      if (\Drupal::state()->get('aun_php', 0)) {
+      if ($config->get('aun_php')) {
         $output = self::autoUsernameEval($output, $account);
       }
     }
@@ -520,21 +522,22 @@ class AutoUsernameSettingsForm extends ConfigFormBase {
     // Generate and cache variables used in this function so that on the second
     // call to autoUsernameCleanstring() we focus on processing.
     if (!isset($cache)) {
+      $config = \Drupal::config('auto_username.settings');
       $cache = [
-        'separator' => \Drupal::state()->get('aun_separator', '-'),
-        'transliterate' => \Drupal::state()->get('aun_transliterate', FALSE) && \Drupal::moduleHandler()->moduleExists('transliteration'),
+        'separator' => $config->get('aun_separator'),
++       'transliterate' => $config->get('aun_transliterate') && \Drupal::moduleHandler()->moduleExists('transliteration'),
         'punctuation' => [],
-        'reduce_ascii' => (bool) \Drupal::state()->get('aun_reduce_ascii', FALSE),
+        'reduce_ascii' => (bool) $config->get('aun_reduce_ascii'),
         'ignore_words_regex' => FALSE,
-        'replace_whitespace' => (bool) \Drupal::state()->get('aun_replace_whitespace', FALSE),
-        'lowercase' => (bool) \Drupal::state()->get('aun_case', AUN_CASE_LOWER),
-        'maxlength' => min(\Drupal::state()->get('aun_max_component_length', 60), self::autoUsernameGetSchemaNameMaxlength()),
+        'replace_whitespace' => (bool) $config->get('aun_replace_whitespace'),
++       'lowercase' => (bool) $config->get('aun_case'),
++       'maxlength' => min($config->get('aun_max_component_length'), self::autoUsernameGetSchemaNameMaxlength()),
       ];
 
       // Generate and cache the punctuation replacements for strtr().
       $punctuation = self::autoUsernamePunctuationChars();
       foreach ($punctuation as $name => $details) {
-        $action = \Drupal::state()->get('aun_punctuation_' . $name, AUN_PUNCTUATION_REMOVE);
+        $action = $config->get('aun_punctuation_' . $name);
         switch ($action) {
           case AUN_PUNCTUATION_REMOVE:
             $cache['punctuation'][$details['value']] = '';
@@ -551,7 +554,7 @@ class AutoUsernameSettingsForm extends ConfigFormBase {
       }
 
       // Generate and cache the ignored words regular expression.
-      $ignore_words = \Drupal::state()->get('aun_ignore_words', '');
+      $ignore_words = $config->get('aun_ignore_words');
       $ignore_words_regex = preg_replace(['/^[,\s]+|[,\s]+$/', '/[,\s]+/'], ['', '\b|\b'], $ignore_words);
       if ($ignore_words_regex) {
         $cache['ignore_words_regex'] = '\b' . $ignore_words_regex . '\b';
@@ -625,7 +628,8 @@ class AutoUsernameSettingsForm extends ConfigFormBase {
 
     if (!isset($separator)) {
       if (!isset($default_separator)) {
-        $default_separator = \Drupal::state()->get('aun_separator', '-');
+        $config = \Drupal::config('auto_username.settings');
++       $default_separator = $config->get('aun_separator');
       }
       $separator = $default_separator;
     }
