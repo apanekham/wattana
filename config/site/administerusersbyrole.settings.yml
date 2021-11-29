@@ -7,7 +7,5 @@ roles:
   teacher: safe
   students: safe
   parents: safe
-  demo_region_admin: unsafe
-  demo_region_user: unsafe
 _core:
   default_config_hash: UiTY9bhUKWJOIWDlOKM3akeeyHuJJRspXETsv3SY6jw

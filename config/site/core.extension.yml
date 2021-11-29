@@ -52,6 +52,8 @@ module:
   maestro_template_builder: 0
   maestro_utilities: 0
   maestro_webform: 0
+  masquerade: 0
+  masquerade_float_block: 0
   menu_block: 0
   menu_link_content: 0
   menu_ui: 0
@@ -79,9 +81,6 @@ module:
   views_ui: 0
   webform: 0
   webform_access: 0
-  webform_demo_application_evaluation: 0
-  webform_demo_event_registration: 0
-  webform_demo_region_contact: 0
   webform_devel: 0
   webform_example_composite: 0
   webform_example_custom_form: 0
@@ -91,6 +90,7 @@ module:
   webform_example_variant: 0
   webform_examples: 0
   webform_examples_accessibility: 0
+  webform_image_select: 0
   webform_node: 0
   webform_options_limit: 0
   webform_scheduled_email: 0

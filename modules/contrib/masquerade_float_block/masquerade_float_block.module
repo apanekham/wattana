@@ -1,0 +1,75 @@
+<?php
+
+/**
+ * @file
+ * File contains JS float block initialization.
+ *
+ * The module loads all needed libraries for initializing jQuery UI dialog
+ * library as well as jQuery.cookies plugin to remember the block position.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function masquerade_float_block_page_attachments_alter(array &$page) {
+
+  $config = \Drupal::configFactory()->get('masquerade_float_block.settings');
+  $can_switch_block = \Drupal::currentUser()
+    ->hasPermission('manage masquerade float block visibility');
+  $mfb_show = \Drupal::requestStack()->getCurrentRequest()->get('mfb_show');
+
+  if (!is_null($mfb_show) && $can_switch_block) {
+    if (in_array($mfb_show, [1, 0])) {
+      $config = \Drupal::configFactory()
+        ->getEditable('masquerade_float_block.settings');
+      $config->set('visible', (integer) $mfb_show);
+      $config->save();
+    }
+    else {
+      Drupal::messenger()->addError(t('Incorrect mfb_show parameter value: only 1 or 0 possible.'));
+    }
+  }
+  elseif (!is_null($mfb_show) && !$can_switch_block) {
+    Drupal::messenger()->addError(t('You have no access to switch the Masquerade Float Block visibility'));
+  }
+
+  $visible = $config->get('visible');
+
+  // Get all permissions for the current user. Only show the block
+  // if it's visible and the user has any masquerade permission.
+  $user_permissions = array();
+  $user = \Drupal::currentUser();
+  $user_roles = $user->getRoles();
+  $roles_permissions = user_role_permissions($user_roles);
+  foreach ($roles_permissions as $role_key => $permissions) {
+    foreach ($permissions as $permission) {
+      $user_permissions[] = $permission;
+    }
+  }
+
+  $masquerade_roles = preg_grep('/^masquerade as/i', $user_permissions);
+
+  if ($visible && (!empty($masquerade_roles) || $user->id() == 1)) {
+    $form = \Drupal::formBuilder()->getForm('Drupal\masquerade\Form\MasqueradeForm');
+    $render_service = \Drupal::service('renderer');
+    $html = $render_service->renderPlain($form);
+    $block_title = t('Masquerade');
+
+    $page['#attached']['library'][] = 'masquerade_float_block/masquerade-float-block';
+    $page['#attached']['drupalSettings']['masquerade_float_block']['block']['content'] = $html;
+    $page['#attached']['drupalSettings']['masquerade_float_block']['block']['subject'] = $block_title;
+  }
+}
+
+/**
+ * Implements hook_help().
+ */
+function masquerade_float_block_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.masquerade_float_block':
+      $output = file_get_contents(drupal_get_path('module', 'masquerade_float_block') . '/README.txt');
+      return '<pre>' . ($output) . '</pre>';
+  }
+}

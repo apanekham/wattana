@@ -74,7 +74,7 @@ regions:
   breadcrumb: Breadcrumb
   content: Content
   sidebar_first: 'Sidebar first'
-  #sidebar_second: 'Sidebar second'
+  sidebar_second: 'Sidebar second'
   featured_bottom_first: 'Featured bottom first'
   featured_bottom_second: 'Featured bottom second'
   featured_bottom_third: 'Featured bottom third'
