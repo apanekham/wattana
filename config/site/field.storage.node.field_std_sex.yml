@@ -1,0 +1,27 @@
+uuid: 68b2a259-3ccb-47c7-bfde-02624ced4382
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_std_sex
+field_name: field_std_sex
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ຍີງ
+      label: ຍີງ
+    -
+      value: ຊາຍ
+      label: ຊາຍ
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

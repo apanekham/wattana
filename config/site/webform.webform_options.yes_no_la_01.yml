@@ -1,0 +1,14 @@
+uuid: ef045315-1032-4a13-ad36-180e5e5131ac
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: W88NYg31DbaVNQx1Uir_dwwXHVtF09QOq4VBGsH1Snk
+id: yes_no_la_01
+label: ແມ່ນ/ບໍ່ແມ່ນ
+category: General
+likert: false
+options: "1: ແມ່ນ\n0: ບໍ່ແມ່ນ"

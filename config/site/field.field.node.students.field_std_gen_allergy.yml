@@ -1,0 +1,23 @@
+uuid: 770d9910-0f0b-4244-bd8f-59fc2a0e1fb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_gen_allergy
+    - node.type.students
+  module:
+    - options
+id: node.students.field_std_gen_allergy
+field_name: field_std_gen_allergy
+entity_type: node
+bundle: students
+label: ເຄີຍແພ້ອາຫານຫຼືບໍ່
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ບໍ່ເຄີຍແພ້
+default_value_callback: ''
+settings: {  }
+field_type: list_string

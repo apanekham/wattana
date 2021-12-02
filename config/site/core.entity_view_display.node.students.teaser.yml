@@ -1,0 +1,159 @@
+uuid: 95344978-3a4d-4e02-abe9-6aaa527c43ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.students.field_field_std_gen_dis_detial
+    - field.field.node.students.field_std_addr_ban
+    - field.field.node.students.field_std_addr_district
+    - field.field.node.students.field_std_addr_province
+    - field.field.node.students.field_std_agree_activity
+    - field.field.node.students.field_std_agree_public
+    - field.field.node.students.field_std_birth_ban
+    - field.field.node.students.field_std_birth_district
+    - field.field.node.students.field_std_birth_province
+    - field.field.node.students.field_std_cousin
+    - field.field.node.students.field_std_cousin_name
+    - field.field.node.students.field_std_dob
+    - field.field.node.students.field_std_docs_id
+    - field.field.node.students.field_std_docs_medical
+    - field.field.node.students.field_std_docs_photo
+    - field.field.node.students.field_std_docs_pickup_photo
+    - field.field.node.students.field_std_en_fname
+    - field.field.node.students.field_std_en_lname
+    - field.field.node.students.field_std_en_nname
+    - field.field.node.students.field_std_ethic
+    - field.field.node.students.field_std_father_address
+    - field.field.node.students.field_std_father_age
+    - field.field.node.students.field_std_father_email
+    - field.field.node.students.field_std_father_fb
+    - field.field.node.students.field_std_father_home_tel
+    - field.field.node.students.field_std_father_mobile
+    - field.field.node.students.field_std_father_name
+    - field.field.node.students.field_std_father_nationality
+    - field.field.node.students.field_std_father_occupation
+    - field.field.node.students.field_std_father_office
+    - field.field.node.students.field_std_father_office_tel
+    - field.field.node.students.field_std_gen_allergy
+    - field.field.node.students.field_std_gen_allergy_detail
+    - field.field.node.students.field_std_gen_disease
+    - field.field.node.students.field_std_gen_instruction
+    - field.field.node.students.field_std_la_fname
+    - field.field.node.students.field_std_la_lname
+    - field.field.node.students.field_std_la_nname
+    - field.field.node.students.field_std_mother_address
+    - field.field.node.students.field_std_mother_age
+    - field.field.node.students.field_std_mother_email
+    - field.field.node.students.field_std_mother_fb
+    - field.field.node.students.field_std_mother_home_tel
+    - field.field.node.students.field_std_mother_mobile
+    - field.field.node.students.field_std_mother_name
+    - field.field.node.students.field_std_mother_nationality
+    - field.field.node.students.field_std_mother_occupation
+    - field.field.node.students.field_std_mother_office
+    - field.field.node.students.field_std_mother_office_tel
+    - field.field.node.students.field_std_nationality
+    - field.field.node.students.field_std_new_class
+    - field.field.node.students.field_std_num
+    - field.field.node.students.field_std_pre_school
+    - field.field.node.students.field_std_pre_school_class
+    - field.field.node.students.field_std_pre_school_docs
+    - field.field.node.students.field_std_pre_school_name
+    - field.field.node.students.field_std_school_year
+    - field.field.node.students.field_std_sex
+    - field.field.node.students.field_std_urgent_address
+    - field.field.node.students.field_std_urgent_email
+    - field.field.node.students.field_std_urgent_facebook
+    - field.field.node.students.field_std_urgent_home_tel
+    - field.field.node.students.field_std_urgent_mobile
+    - field.field.node.students.field_std_urgent_name
+    - field.field.node.students.field_std_urgent_office_tel
+    - field.field.node.students.field_std_urgent_rel
+    - node.type.students
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.students.teaser
+targetEntityType: node
+bundle: students
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_field_std_gen_dis_detial: true
+  field_std_addr_ban: true
+  field_std_addr_district: true
+  field_std_addr_province: true
+  field_std_agree_activity: true
+  field_std_agree_public: true
+  field_std_birth_ban: true
+  field_std_birth_district: true
+  field_std_birth_province: true
+  field_std_cousin: true
+  field_std_cousin_name: true
+  field_std_dob: true
+  field_std_docs_id: true
+  field_std_docs_medical: true
+  field_std_docs_photo: true
+  field_std_docs_pickup_photo: true
+  field_std_en_fname: true
+  field_std_en_lname: true
+  field_std_en_nname: true
+  field_std_ethic: true
+  field_std_father_address: true
+  field_std_father_age: true
+  field_std_father_email: true
+  field_std_father_fb: true
+  field_std_father_home_tel: true
+  field_std_father_mobile: true
+  field_std_father_name: true
+  field_std_father_nationality: true
+  field_std_father_occupation: true
+  field_std_father_office: true
+  field_std_father_office_tel: true
+  field_std_gen_allergy: true
+  field_std_gen_allergy_detail: true
+  field_std_gen_disease: true
+  field_std_gen_instruction: true
+  field_std_la_fname: true
+  field_std_la_lname: true
+  field_std_la_nname: true
+  field_std_mother_address: true
+  field_std_mother_age: true
+  field_std_mother_email: true
+  field_std_mother_fb: true
+  field_std_mother_home_tel: true
+  field_std_mother_mobile: true
+  field_std_mother_name: true
+  field_std_mother_nationality: true
+  field_std_mother_occupation: true
+  field_std_mother_office: true
+  field_std_mother_office_tel: true
+  field_std_nationality: true
+  field_std_new_class: true
+  field_std_num: true
+  field_std_pre_school: true
+  field_std_pre_school_class: true
+  field_std_pre_school_docs: true
+  field_std_pre_school_name: true
+  field_std_school_year: true
+  field_std_sex: true
+  field_std_urgent_address: true
+  field_std_urgent_email: true
+  field_std_urgent_facebook: true
+  field_std_urgent_home_tel: true
+  field_std_urgent_mobile: true
+  field_std_urgent_name: true
+  field_std_urgent_office_tel: true
+  field_std_urgent_rel: true

@@ -1,0 +1,21 @@
+uuid: 0fe5aaff-5717-4f07-ad6b-af5c4a386a47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_agree_public
+    - node.type.students
+  module:
+    - options
+id: node.students.field_std_agree_public
+field_name: field_std_agree_public
+entity_type: node
+bundle: students
+label: 'ໃຫ້ທາງໂຮງຮຽນ ເອົາຮູບລູກຂ້າພະເຈົ້າລົງໃນສື່ອອນລາຍ ແລະ ສິ່ງພີມຕ່າງໆ'
+description: "<em>ການລົງຮູບນັກຮຽນໃນສືອອນລາຍ</em><br />\r\nທາງໂຮງຮຽນຈະມີການເຮັດການໂຄສະນາ ແລະ ໂປໂມດໂຮງຮຽນໂດຍຜ່ານສື່ອອນລາຍ ຫຼື ສິ່ງພິມຕ່າໆ ເຊິ່ງອາດຈະຕ້ອງມີຮູບພາບນັກຮຽນລວມເຖິງລູກຂອງທ່ານຢູ່ນໍາ ເຊັ່ນ ແຟດບຸກ, ເຄັດຕາລອກ, ແຜນພັບ, ປ້າຍໂຄສະນາ ແລະ ອື່ນໆ. ກະລຸນາຕິກຂ້າງລຸ່ມເພື່ອເປັນຂໍ້ມູນໃຫ້ແກ່ໂຮງຮຽນ."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

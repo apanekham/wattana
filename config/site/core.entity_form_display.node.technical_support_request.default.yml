@@ -7,11 +7,20 @@ dependencies:
     - field.field.node.technical_support_request.field_assignee_it_use_only_
     - field.field.node.technical_support_request.field_attachment
     - field.field.node.technical_support_request.field_response_it_use_only_
+    - field.field.node.technical_support_request.field_test
     - node.type.technical_support_request
   module:
+    - field_layout
     - file
+    - layout_discovery
     - path
     - text
+    - webform
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.technical_support_request.default
 targetEntityType: node
 bundle: technical_support_request
@@ -57,6 +66,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
+    region: content
+  field_test:
+    weight: 26
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
     region: content
   path:
     type: path

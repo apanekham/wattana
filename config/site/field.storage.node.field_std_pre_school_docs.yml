@@ -1,0 +1,23 @@
+uuid: ed632203-9bd6-4c70-9f78-38f80a04f4a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_std_pre_school_docs
+field_name: field_std_pre_school_docs
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

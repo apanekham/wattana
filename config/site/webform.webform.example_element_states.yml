@@ -1,4 +1,4 @@
-uuid: f6c07b90-db23-4f45-927b-114350a1b6f0
+uuid: 00034490-0493-4e29-8547-4e7fc7015937
 langcode: en
 status: open
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - webform_examples
 _core:
-  default_config_hash: qiEP6Dki8OCTjQHMbaYjyVhtC3HGVyaS24yQw-j6SpQ
+  default_config_hash: Cs1-D5VUSUeK1w--u8ZTXnmB0xAUNkys2rq8tK4Is90
 open: null
 close: null
 weight: 0
@@ -38,7 +38,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -59,6 +59,9 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_method: ''
+  form_action: ''
+  form_attributes: {  }
   share: false
   share_node: false
   share_theme_name: ''

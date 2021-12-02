@@ -1,4 +1,4 @@
-uuid: 79cac35a-7d93-401f-b730-9cae5b09ba9d
+uuid: b0170d9a-e11f-4bcf-b4ee-f4823bca02b4
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     module:
       - webform
 _core:
-  default_config_hash: gZCLESMdXmEZxHqnQFx7a0rUefrkVuFzHSMnWe0qioM
+  default_config_hash: DMG4TKTHEXtHN8ho_sG_GiZHgweZ6nrRm6BAjk0LZ_Y
 id: likert_comparison
 label: 'Likert: Comparison'
 category: Likert
 likert: true
-options: "1: Strongly Disagree\n2: Disagree\n3: Neutral\n4: Agree\n5: Strongly Agree\n"
+options: "1: Much Worse\n2: Somewhat Worse\n3: About the Same\n4: Somewhat Better\n5: Much Better\n"

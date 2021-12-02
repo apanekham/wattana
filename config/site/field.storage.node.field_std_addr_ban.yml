@@ -1,0 +1,21 @@
+uuid: e5fd36dc-b22b-4c12-8ce9-e5a03a999829
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_std_addr_ban
+field_name: field_std_addr_ban
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: adfa05be-6fcd-46fa-9651-fc0cc6b0e141
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - telephone
+id: node.field_std_father_mobile
+field_name: field_std_father_mobile
+entity_type: node
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

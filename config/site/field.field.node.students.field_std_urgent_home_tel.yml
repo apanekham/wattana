@@ -1,0 +1,21 @@
+uuid: 931c637a-2804-4641-93b1-b36c44dd34db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_urgent_home_tel
+    - node.type.students
+  module:
+    - telephone
+id: node.students.field_std_urgent_home_tel
+field_name: field_std_urgent_home_tel
+entity_type: node
+bundle: students
+label: ເບີໂທບ້ານ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

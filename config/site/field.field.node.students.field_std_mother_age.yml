@@ -1,0 +1,23 @@
+uuid: 7794ab0e-b31e-449b-b77f-6312c9d754d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_mother_age
+    - node.type.students
+id: node.students.field_std_mother_age
+field_name: field_std_mother_age
+entity_type: node
+bundle: students
+label: ອາຍຸ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

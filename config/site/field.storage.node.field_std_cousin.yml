@@ -1,0 +1,27 @@
+uuid: 31158cec-326b-4f8a-916e-2304c958049a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_std_cousin
+field_name: field_std_cousin
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ມີ
+      label: ມີ
+    -
+      value: ບໍ່ມີ
+      label: ບໍ່ມີ
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

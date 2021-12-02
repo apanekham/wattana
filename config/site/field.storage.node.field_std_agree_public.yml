@@ -1,0 +1,27 @@
+uuid: c6c14e51-76e4-4241-9480-7e8745663ce5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_std_agree_public
+field_name: field_std_agree_public
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ອະນຸຍາດ
+      label: ອະນຸຍາດ
+    -
+      value: ບໍ່ອະນຸຍາດ
+      label: ບໍ່ອະນຸຍາດ
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

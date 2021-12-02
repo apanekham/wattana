@@ -1,0 +1,21 @@
+uuid: add83d61-eee1-4107-b262-9c8a5294272a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_dob
+    - node.type.students
+  module:
+    - datetime
+id: node.students.field_std_dob
+field_name: field_std_dob
+entity_type: node
+bundle: students
+label: ວັນ/ເດືອນ/ປີເກີດ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,19 @@
+uuid: 2a4e3cfc-3b25-4350-a88a-c51aaa42a7d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_urgent_rel
+    - node.type.students
+id: node.students.field_std_urgent_rel
+field_name: field_std_urgent_rel
+entity_type: node
+bundle: students
+label: ສາຍສຳພັນກັບນັກຮຽນ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

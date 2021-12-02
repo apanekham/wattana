@@ -1,0 +1,19 @@
+uuid: 103e7732-fb56-48f3-9178-98451af85f1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_father_name
+    - node.type.students
+id: node.students.field_std_father_name
+field_name: field_std_father_name
+entity_type: node
+bundle: students
+label: 'ຊື່ ແລະ ນາມສະກຸນພໍ່'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

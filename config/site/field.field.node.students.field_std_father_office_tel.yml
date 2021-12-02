@@ -1,0 +1,21 @@
+uuid: a32c77a7-d59a-4590-939c-932541601134
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_father_office_tel
+    - node.type.students
+  module:
+    - telephone
+id: node.students.field_std_father_office_tel
+field_name: field_std_father_office_tel
+entity_type: node
+bundle: students
+label: ເບີໂທຫ້ອງການ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

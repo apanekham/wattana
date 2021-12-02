@@ -1,0 +1,19 @@
+uuid: cb9f1009-273d-4397-9608-2a97348fa425
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_std_gen_instruction
+field_name: field_std_gen_instruction
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

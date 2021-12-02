@@ -1,0 +1,637 @@
+uuid: 4f838251-b325-4860-8cdd-9b7bb9d9bcc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.students.field_field_std_gen_dis_detial
+    - field.field.node.students.field_std_addr_ban
+    - field.field.node.students.field_std_addr_district
+    - field.field.node.students.field_std_addr_province
+    - field.field.node.students.field_std_agree_activity
+    - field.field.node.students.field_std_agree_public
+    - field.field.node.students.field_std_birth_ban
+    - field.field.node.students.field_std_birth_district
+    - field.field.node.students.field_std_birth_province
+    - field.field.node.students.field_std_cousin
+    - field.field.node.students.field_std_cousin_name
+    - field.field.node.students.field_std_dob
+    - field.field.node.students.field_std_docs_id
+    - field.field.node.students.field_std_docs_medical
+    - field.field.node.students.field_std_docs_photo
+    - field.field.node.students.field_std_docs_pickup_photo
+    - field.field.node.students.field_std_en_fname
+    - field.field.node.students.field_std_en_lname
+    - field.field.node.students.field_std_en_nname
+    - field.field.node.students.field_std_ethic
+    - field.field.node.students.field_std_father_address
+    - field.field.node.students.field_std_father_age
+    - field.field.node.students.field_std_father_email
+    - field.field.node.students.field_std_father_fb
+    - field.field.node.students.field_std_father_home_tel
+    - field.field.node.students.field_std_father_mobile
+    - field.field.node.students.field_std_father_name
+    - field.field.node.students.field_std_father_nationality
+    - field.field.node.students.field_std_father_occupation
+    - field.field.node.students.field_std_father_office
+    - field.field.node.students.field_std_father_office_tel
+    - field.field.node.students.field_std_gen_allergy
+    - field.field.node.students.field_std_gen_allergy_detail
+    - field.field.node.students.field_std_gen_disease
+    - field.field.node.students.field_std_gen_instruction
+    - field.field.node.students.field_std_la_fname
+    - field.field.node.students.field_std_la_lname
+    - field.field.node.students.field_std_la_nname
+    - field.field.node.students.field_std_mother_address
+    - field.field.node.students.field_std_mother_age
+    - field.field.node.students.field_std_mother_email
+    - field.field.node.students.field_std_mother_fb
+    - field.field.node.students.field_std_mother_home_tel
+    - field.field.node.students.field_std_mother_mobile
+    - field.field.node.students.field_std_mother_name
+    - field.field.node.students.field_std_mother_nationality
+    - field.field.node.students.field_std_mother_occupation
+    - field.field.node.students.field_std_mother_office
+    - field.field.node.students.field_std_mother_office_tel
+    - field.field.node.students.field_std_nationality
+    - field.field.node.students.field_std_new_class
+    - field.field.node.students.field_std_num
+    - field.field.node.students.field_std_pre_school
+    - field.field.node.students.field_std_pre_school_class
+    - field.field.node.students.field_std_pre_school_docs
+    - field.field.node.students.field_std_pre_school_name
+    - field.field.node.students.field_std_school_year
+    - field.field.node.students.field_std_sex
+    - field.field.node.students.field_std_urgent_address
+    - field.field.node.students.field_std_urgent_email
+    - field.field.node.students.field_std_urgent_facebook
+    - field.field.node.students.field_std_urgent_home_tel
+    - field.field.node.students.field_std_urgent_mobile
+    - field.field.node.students.field_std_urgent_name
+    - field.field.node.students.field_std_urgent_office_tel
+    - field.field.node.students.field_std_urgent_rel
+    - node.type.students
+  module:
+    - datetime
+    - entity_reference_revisions
+    - field_group
+    - field_layout
+    - file
+    - image
+    - layout_discovery
+    - options
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_std_birthplace:
+      children:
+        - field_std_birth_ban
+        - field_std_birth_district
+        - field_std_birth_province
+      parent_name: group_pahwdhnymnknyn
+      weight: 41
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+      label: 'ສະຖານທີ່ເກີດ(ບ້ານ, ເມືອງ, ແຂວງ)'
+    group_std_address:
+      children:
+        - field_std_addr_ban
+        - field_std_addr_district
+        - field_std_addr_province
+      parent_name: group_pahwdhnymnknyn
+      weight: 44
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+      label: ທີ່ຢູ່ປະຈຸບັນທີ່ຕິດຕໍ່ໄດ້
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.students.default
+targetEntityType: node
+bundle: students
+mode: default
+content:
+  field_field_std_gen_dis_detial:
+    weight: 79
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_addr_ban:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_addr_district:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_addr_province:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_std_agree_activity:
+    weight: 86
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_std_agree_public:
+    weight: 87
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_std_birth_ban:
+    weight: 20
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_birth_district:
+    weight: 21
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_birth_province:
+    weight: 22
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_std_cousin:
+    weight: 80
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_std_cousin_name:
+    type: entity_reference_revisions_entity_view
+    weight: 81
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_std_dob:
+    weight: 40
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_std_docs_id:
+    weight: 90
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_std_docs_medical:
+    weight: 89
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_std_docs_photo:
+    weight: 88
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_std_docs_pickup_photo:
+    weight: 91
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_std_en_fname:
+    weight: 36
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_en_lname:
+    weight: 37
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_en_nname:
+    weight: 38
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_ethic:
+    weight: 43
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_father_address:
+    weight: 53
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_father_age:
+    weight: 46
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_std_father_email:
+    weight: 67
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_father_fb:
+    weight: 54
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_father_home_tel:
+    weight: 51
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_father_mobile:
+    weight: 52
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_father_name:
+    weight: 45
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_father_nationality:
+    weight: 47
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_father_occupation:
+    weight: 48
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_father_office:
+    weight: 49
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_father_office_tel:
+    weight: 50
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_gen_allergy:
+    weight: 76
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_std_gen_allergy_detail:
+    weight: 77
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_gen_disease:
+    weight: 78
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_std_gen_instruction:
+    weight: 95
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_std_la_fname:
+    weight: 33
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_la_lname:
+    weight: 34
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_la_nname:
+    weight: 35
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_mother_address:
+    weight: 64
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_mother_age:
+    weight: 57
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_std_mother_email:
+    weight: 66
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_mother_fb:
+    weight: 65
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_mother_home_tel:
+    weight: 62
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_mother_mobile:
+    weight: 63
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_mother_name:
+    weight: 56
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_mother_nationality:
+    weight: 58
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_mother_occupation:
+    weight: 59
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_mother_office:
+    weight: 60
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_mother_office_tel:
+    weight: 61
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_nationality:
+    weight: 42
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_new_class:
+    weight: 94
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_std_num:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_pre_school:
+    weight: 82
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_std_pre_school_class:
+    weight: 84
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_pre_school_docs:
+    weight: 85
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_std_pre_school_name:
+    weight: 83
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_school_year:
+    weight: 93
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_std_sex:
+    weight: 39
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_std_urgent_address:
+    weight: 73
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_urgent_email:
+    weight: 75
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_urgent_facebook:
+    weight: 74
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_urgent_home_tel:
+    weight: 71
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_urgent_mobile:
+    weight: 72
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_urgent_name:
+    weight: 68
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_std_urgent_office_tel:
+    weight: 70
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_std_urgent_rel:
+    weight: 69
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

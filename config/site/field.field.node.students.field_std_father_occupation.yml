@@ -1,0 +1,19 @@
+uuid: fdc28444-9853-4a0c-82e0-5d0e7a2160c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_father_occupation
+    - node.type.students
+id: node.students.field_std_father_occupation
+field_name: field_std_father_occupation
+entity_type: node
+bundle: students
+label: ອາຊີບ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

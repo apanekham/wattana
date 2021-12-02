@@ -1,0 +1,75 @@
+uuid: 7abb0a9c-3145-452c-b9c3-572dfa2eb2c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_std_birth_province
+field_name: field_std_birth_province
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'ແຂວງ ຜົ້ງສາລີ'
+      label: 'ແຂວງ ຜົ້ງສາລີ'
+    -
+      value: 'ແຂວງ ຫລວງນ້ຳທາ'
+      label: 'ແຂວງ ຫລວງນ້ຳທາ'
+    -
+      value: 'ແຂວງ ບໍ່ແກ້ວ'
+      label: 'ແຂວງ ບໍ່ແກ້ວ'
+    -
+      value: 'ແຂວງ ອຸດົມໄຊ'
+      label: 'ແຂວງ ອຸດົມໄຊ'
+    -
+      value: 'ແຂວງ ໄຊຍະບູລີ'
+      label: 'ແຂວງ ໄຊຍະບູລີ'
+    -
+      value: 'ແຂວງ ຫລວງພະບາງ'
+      label: 'ແຂວງ ຫລວງພະບາງ'
+    -
+      value: 'ແຂວງ ຫົວພັນ'
+      label: 'ແຂວງ ຫົວພັນ'
+    -
+      value: 'ແຂວງ ຊຽງຂວາງ'
+      label: 'ແຂວງ ຊຽງຂວາງ'
+    -
+      value: 'ແຂວງ ໄຊສົມບູນ'
+      label: 'ແຂວງ ໄຊສົມບູນ'
+    -
+      value: 'ແຂວງ ວຽງຈັນ'
+      label: 'ແຂວງ ວຽງຈັນ'
+    -
+      value: ນະຄອນຫລວງວຽງຈັນ
+      label: ນະຄອນຫລວງວຽງຈັນ
+    -
+      value: 'ແຂວງ ບໍລິຄຳໄຊ'
+      label: 'ແຂວງ ບໍລິຄຳໄຊ'
+    -
+      value: 'ແຂວງ ຄຳມ່ວນ'
+      label: 'ແຂວງ ຄຳມ່ວນ'
+    -
+      value: 'ແຂວງ ສະຫວັນນະເຂດ'
+      label: 'ແຂວງ ສະຫວັນນະເຂດ'
+    -
+      value: 'ແຂວງ ສາລະວັນ'
+      label: 'ແຂວງ ສາລະວັນ'
+    -
+      value: 'ແຂວງ ເຊກອງ'
+      label: 'ແຂວງ ເຊກອງ'
+    -
+      value: 'ແຂວງ ຈຳປາສັກ'
+      label: 'ແຂວງ ຈຳປາສັກ'
+    -
+      value: 'ແຂວງ ອັດຕະປື'
+      label: 'ແຂວງ ອັດຕະປື'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

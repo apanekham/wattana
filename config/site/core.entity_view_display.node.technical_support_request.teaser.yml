@@ -8,10 +8,18 @@ dependencies:
     - field.field.node.technical_support_request.field_assignee_it_use_only_
     - field.field.node.technical_support_request.field_attachment
     - field.field.node.technical_support_request.field_response_it_use_only_
+    - field.field.node.technical_support_request.field_test
     - node.type.technical_support_request
   module:
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.technical_support_request.teaser
 targetEntityType: node
 bundle: technical_support_request
@@ -34,3 +42,4 @@ hidden:
   field_assignee_it_use_only_: true
   field_attachment: true
   field_response_it_use_only_: true
+  field_test: true

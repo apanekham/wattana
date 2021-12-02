@@ -1,0 +1,21 @@
+uuid: 32fe2135-83bf-498a-b824-55770bf8c446
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_mother_mobile
+    - node.type.students
+  module:
+    - telephone
+id: node.students.field_std_mother_mobile
+field_name: field_std_mother_mobile
+entity_type: node
+bundle: students
+label: ເບີມືຖື
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

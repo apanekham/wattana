@@ -1,4 +1,4 @@
-uuid: 1cc086da-69ae-477a-be2a-cf9c57c6409f
+uuid: b9cd4fad-88be-4352-a504-ecf3b4b6259c
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,16 @@ dependencies:
     - field.field.node.webform.webform
     - node.type.webform
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
     - webform
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: A3evv2pt6d-bKCPcgjXA5VGTemXWOxG3lSXvWiRWcck
 id: node.webform.default

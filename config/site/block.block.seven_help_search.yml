@@ -1,0 +1,32 @@
+uuid: c0138b35-9cad-49c5-8722-6d2a2bd7a1b8
+langcode: en
+status: true
+dependencies:
+  enforced:
+    config:
+      - search.page.help_search
+  module:
+    - search
+    - system
+  theme:
+    - seven
+_core:
+  default_config_hash: f8T1jrZwKndqctay90ycJhrknjSlSOciRKqbiHkydWg
+id: seven_help_search
+theme: seven
+region: help
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search help'
+  provider: search
+  label_display: visible
+  page_id: help_search
+visibility:
+  request_path:
+    id: request_path
+    pages: /admin/help
+    negate: false
+    context_mapping: {  }

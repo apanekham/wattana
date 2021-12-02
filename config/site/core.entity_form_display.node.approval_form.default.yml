@@ -6,6 +6,14 @@ dependencies:
     - field.field.node.approval_form.field_request_explanation
     - field.field.node.approval_form.field_user
     - node.type.approval_form
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: fwIXMM05ltMXRpJ5Fqr27Z-AJvznbkrW8KOtbafYChA
 id: node.approval_form.default

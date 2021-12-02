@@ -1,0 +1,23 @@
+uuid: a4c9c1ae-f3d8-40ba-9ad8-8647874a7028
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_gen_disease
+    - node.type.students
+  module:
+    - options
+id: node.students.field_std_gen_disease
+field_name: field_std_gen_disease
+entity_type: node
+bundle: students
+label: ມີພະຍາດປະຈຳຕົວບໍ່
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ບໍ່ມີ
+default_value_callback: ''
+settings: {  }
+field_type: list_string

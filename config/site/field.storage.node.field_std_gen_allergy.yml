@@ -1,0 +1,27 @@
+uuid: 64028214-4420-4c68-a244-2247c8f96bdd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_std_gen_allergy
+field_name: field_std_gen_allergy
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ເຄີຍແພ້
+      label: ເຄີຍແພ້
+    -
+      value: ບໍ່ເຄີຍແພ້
+      label: ບໍ່ເຄີຍແພ້
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

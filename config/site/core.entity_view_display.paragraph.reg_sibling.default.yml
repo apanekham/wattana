@@ -6,6 +6,14 @@ dependencies:
     - field.field.paragraph.reg_sibling.field_reg_sibling_age
     - field.field.paragraph.reg_sibling.field_reg_sibling_name
     - paragraphs.paragraphs_type.reg_sibling
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.reg_sibling.default
 targetEntityType: paragraph
 bundle: reg_sibling

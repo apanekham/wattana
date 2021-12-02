@@ -1,0 +1,959 @@
+uuid: b95a7509-fce7-466f-8e12-65b695a242af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.students.field_field_std_gen_dis_detial
+    - field.field.node.students.field_std_addr_ban
+    - field.field.node.students.field_std_addr_district
+    - field.field.node.students.field_std_addr_province
+    - field.field.node.students.field_std_agree_activity
+    - field.field.node.students.field_std_agree_public
+    - field.field.node.students.field_std_birth_ban
+    - field.field.node.students.field_std_birth_district
+    - field.field.node.students.field_std_birth_province
+    - field.field.node.students.field_std_cousin
+    - field.field.node.students.field_std_cousin_name
+    - field.field.node.students.field_std_dob
+    - field.field.node.students.field_std_docs_id
+    - field.field.node.students.field_std_docs_medical
+    - field.field.node.students.field_std_docs_photo
+    - field.field.node.students.field_std_docs_pickup_photo
+    - field.field.node.students.field_std_en_fname
+    - field.field.node.students.field_std_en_lname
+    - field.field.node.students.field_std_en_nname
+    - field.field.node.students.field_std_ethic
+    - field.field.node.students.field_std_father_address
+    - field.field.node.students.field_std_father_age
+    - field.field.node.students.field_std_father_email
+    - field.field.node.students.field_std_father_fb
+    - field.field.node.students.field_std_father_home_tel
+    - field.field.node.students.field_std_father_mobile
+    - field.field.node.students.field_std_father_name
+    - field.field.node.students.field_std_father_nationality
+    - field.field.node.students.field_std_father_occupation
+    - field.field.node.students.field_std_father_office
+    - field.field.node.students.field_std_father_office_tel
+    - field.field.node.students.field_std_gen_allergy
+    - field.field.node.students.field_std_gen_allergy_detail
+    - field.field.node.students.field_std_gen_disease
+    - field.field.node.students.field_std_gen_instruction
+    - field.field.node.students.field_std_la_fname
+    - field.field.node.students.field_std_la_lname
+    - field.field.node.students.field_std_la_nname
+    - field.field.node.students.field_std_mother_address
+    - field.field.node.students.field_std_mother_age
+    - field.field.node.students.field_std_mother_email
+    - field.field.node.students.field_std_mother_fb
+    - field.field.node.students.field_std_mother_home_tel
+    - field.field.node.students.field_std_mother_mobile
+    - field.field.node.students.field_std_mother_name
+    - field.field.node.students.field_std_mother_nationality
+    - field.field.node.students.field_std_mother_occupation
+    - field.field.node.students.field_std_mother_office
+    - field.field.node.students.field_std_mother_office_tel
+    - field.field.node.students.field_std_nationality
+    - field.field.node.students.field_std_new_class
+    - field.field.node.students.field_std_num
+    - field.field.node.students.field_std_pre_school
+    - field.field.node.students.field_std_pre_school_class
+    - field.field.node.students.field_std_pre_school_docs
+    - field.field.node.students.field_std_pre_school_name
+    - field.field.node.students.field_std_school_year
+    - field.field.node.students.field_std_sex
+    - field.field.node.students.field_std_urgent_address
+    - field.field.node.students.field_std_urgent_email
+    - field.field.node.students.field_std_urgent_facebook
+    - field.field.node.students.field_std_urgent_home_tel
+    - field.field.node.students.field_std_urgent_mobile
+    - field.field.node.students.field_std_urgent_name
+    - field.field.node.students.field_std_urgent_office_tel
+    - field.field.node.students.field_std_urgent_rel
+    - image.style.thumbnail
+    - node.type.students
+  module:
+    - conditional_fields
+    - datetime
+    - field_group
+    - field_layout
+    - file
+    - image
+    - layout_discovery
+    - paragraphs
+    - path
+    - telephone
+    - text
+third_party_settings:
+  field_group:
+    group_std_tabs:
+      children:
+        - group_std_student_info
+        - group_std_family_info
+        - group_std_general_info
+        - group_std_school_info
+        - group_std_agreement
+        - group_std_docs
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: Tabs
+    group_std_student_info:
+      children:
+        - title
+        - field_std_la_fname
+        - field_std_la_lname
+        - field_std_la_nname
+        - field_std_en_fname
+        - field_std_en_lname
+        - field_std_en_nname
+        - field_std_sex
+        - field_std_dob
+        - group_std_student_brithplace
+        - field_std_nationality
+        - field_std_ethic
+        - group_std_student_address
+      parent_name: group_std_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: ປະຫວັດຫຍໍ້ນັກຮຽນ
+    group_std_student_brithplace:
+      children:
+        - field_std_birth_ban
+        - field_std_birth_district
+        - field_std_birth_province
+      parent_name: group_std_student_info
+      weight: 18
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'ສະຖານທີ່ເກີດ(ບ້ານ, ເມືອງ, ແຂວງ)'
+    group_std_student_address:
+      children:
+        - field_std_addr_ban
+        - field_std_addr_district
+        - field_std_addr_province
+      parent_name: group_std_student_info
+      weight: 21
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: ທີ່ຢູ່ປະຈຸບັນທີ່ຕິດຕໍ່ໄດ້
+    group_std_family_info:
+      children:
+        - group_accordion
+      parent_name: group_std_tabs
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: ປະຫວັດຄອບຄົວ
+    group_accordion:
+      children:
+        - group_std_father_info
+        - group_std_mother_info
+        - group_urgent_contact
+      parent_name: group_std_family_info
+      weight: 20
+      format_type: accordion
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        effect: none
+      label: Accordion
+    group_std_father_info:
+      children:
+        - field_std_father_name
+        - field_std_father_age
+        - field_std_father_nationality
+        - field_std_father_occupation
+        - field_std_father_office
+        - field_std_father_office_tel
+        - field_std_father_home_tel
+        - field_std_father_mobile
+        - field_std_father_address
+        - field_std_father_fb
+        - field_std_father_email
+      parent_name: group_accordion
+      weight: 20
+      format_type: accordion_item
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        formatter: closed
+        required_fields: true
+        description: ''
+      label: ຂໍ້ມູນພໍ່
+    group_std_mother_info:
+      children:
+        - field_std_mother_name
+        - field_std_mother_age
+        - field_std_mother_nationality
+        - field_std_mother_occupation
+        - field_std_mother_office
+        - field_std_mother_office_tel
+        - field_std_mother_home_tel
+        - field_std_mother_mobile
+        - field_std_mother_address
+        - field_std_mother_fb
+        - field_std_mother_email
+      parent_name: group_accordion
+      weight: 21
+      format_type: accordion_item
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        formatter: closed
+        required_fields: true
+        description: ''
+      label: ຂໍ້ມູນແມ່
+    group_urgent_contact:
+      children:
+        - field_std_urgent_name
+        - field_std_urgent_rel
+        - field_std_urgent_office_tel
+        - field_std_urgent_home_tel
+        - field_std_urgent_mobile
+        - field_std_urgent_address
+        - field_std_urgent_facebook
+        - field_std_urgent_email
+      parent_name: group_accordion
+      weight: 22
+      format_type: accordion_item
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        formatter: closed
+        required_fields: true
+        description: ''
+      label: ກໍລະນີສຸກເສີນຕິດຕໍ່
+    group_std_general_info:
+      children:
+        - field_std_gen_allergy
+        - field_std_gen_allergy_detail
+        - field_std_gen_disease
+        - field_field_std_gen_dis_detial
+        - field_std_gen_instruction
+        - field_std_cousin
+        - field_std_cousin_name
+      parent_name: group_std_tabs
+      weight: 22
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: ຂໍ້ມູນທົ່ວໄປຂອງນັກຮຽນ
+    group_std_school_info:
+      children:
+        - field_std_pre_school
+        - field_std_pre_school_name
+        - field_std_pre_school_class
+        - field_std_pre_school_docs
+        - field_std_new_class
+        - field_std_school_year
+      parent_name: group_std_tabs
+      weight: 23
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: ຂໍ້ມູນການຮຽນ
+    group_std_agreement:
+      children:
+        - field_std_agree_activity
+        - field_std_agree_public
+      parent_name: group_std_tabs
+      weight: 24
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: ການຍິນຍອມຂອງຜູ້ປົກຄອງ
+    group_std_docs:
+      children:
+        - field_std_docs_photo
+        - field_std_docs_id
+        - field_std_docs_medical
+        - field_std_docs_pickup_photo
+      parent_name: group_std_tabs
+      weight: 26
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: ເອກະສານຕິດຂັດ
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.students.default
+targetEntityType: node
+bundle: students
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_field_std_gen_dis_detial:
+    weight: 25
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        ea03cbd5-04ba-4aed-935d-5fd849a5077d:
+          dependee: field_std_gen_disease
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: ມີ
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: students
+    type: string_textarea
+    region: content
+  field_std_addr_ban:
+    weight: 22
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_addr_district:
+    weight: 23
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_addr_province:
+    weight: 24
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_std_agree_activity:
+    weight: 55
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_std_agree_public:
+    weight: 56
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_std_birth_ban:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_birth_district:
+    weight: 18
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_birth_province:
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_std_cousin:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_std_cousin_name:
+    type: entity_reference_paragraphs
+    weight: 28
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings:
+      conditional_fields:
+        03eeb191-12fe-4a35-abe0-eb23b3594671:
+          dependee: field_std_cousin
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: ມີ
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: students
+    region: content
+  field_std_dob:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_std_docs_id:
+    weight: 11
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_std_docs_medical:
+    weight: 12
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_std_docs_photo:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_std_docs_pickup_photo:
+    weight: 13
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_std_en_fname:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_en_lname:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_en_nname:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_ethic:
+    weight: 20
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_father_address:
+    weight: 17
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_std_father_age:
+    weight: 10
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_std_father_email:
+    weight: 37
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_std_father_fb:
+    weight: 18
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_father_home_tel:
+    weight: 15
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_std_father_mobile:
+    weight: 16
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_std_father_name:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_father_nationality:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_father_occupation:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_father_office:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_father_office_tel:
+    weight: 14
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_std_gen_allergy:
+    weight: 22
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_std_gen_allergy_detail:
+    weight: 23
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        79f0626e-c8d0-4fe9-9fb6-65d455bb42e5:
+          dependee: field_std_gen_allergy
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: ເຄີຍແພ້
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: students
+    type: string_textarea
+    region: content
+  field_std_gen_disease:
+    weight: 24
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_std_gen_instruction:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_std_la_fname:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_la_lname:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_la_nname:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_mother_address:
+    weight: 34
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_std_mother_age:
+    weight: 27
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_std_mother_email:
+    weight: 36
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_std_mother_fb:
+    weight: 35
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_mother_home_tel:
+    weight: 32
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_std_mother_mobile:
+    weight: 33
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_std_mother_name:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_mother_nationality:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_mother_occupation:
+    weight: 29
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_mother_office:
+    weight: 30
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_mother_office_tel:
+    weight: 31
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_std_nationality:
+    weight: 19
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_new_class:
+    weight: 56
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_std_num:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_pre_school:
+    weight: 51
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_std_pre_school_class:
+    weight: 53
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_pre_school_docs:
+    weight: 54
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_std_pre_school_name:
+    weight: 52
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_school_year:
+    weight: 57
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_std_sex:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_std_urgent_address:
+    weight: 43
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_std_urgent_email:
+    weight: 45
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_std_urgent_facebook:
+    weight: 44
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_urgent_home_tel:
+    weight: 41
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_std_urgent_mobile:
+    weight: 42
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_std_urgent_name:
+    weight: 38
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_urgent_office_tel:
+    weight: 40
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_std_urgent_rel:
+    weight: 39
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

@@ -6,6 +6,14 @@ dependencies:
     - field.field.paragraph.reg_child.field_reg_child_age
     - field.field.paragraph.reg_child.field_reg_child_name
     - paragraphs.paragraphs_type.reg_child
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.reg_child.default
 targetEntityType: paragraph
 bundle: reg_child

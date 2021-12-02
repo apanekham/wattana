@@ -1,0 +1,23 @@
+uuid: 98ac7517-858b-41c7-91ee-eff8a31bfa71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_cousin
+    - node.type.students
+  module:
+    - options
+id: node.students.field_std_cousin
+field_name: field_std_cousin
+entity_type: node
+bundle: students
+label: 'ມີອ້າຍເອື້ອຍນ້ອງ ຫຼື ຍາດພີ່ນ້ອງເຂົ້າໂຮງຮຽນວັດທະນາບໍ?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ບໍ່ມີ
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+uuid: 5da01054-ee4e-48a7-af5c-a87f5db96835
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_pre_school_name
+    - node.type.students
+id: node.students.field_std_pre_school_name
+field_name: field_std_pre_school_name
+entity_type: node
+bundle: students
+label: 'ຖ້າເຄີຍ ກະລຸນາລະບຸຊື່ໂຮງຮຽນ'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

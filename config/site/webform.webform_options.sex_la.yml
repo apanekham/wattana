@@ -1,0 +1,14 @@
+uuid: c2080d21-a52f-4d04-aa1f-961d38d9b6a7
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: WRpxpwYpfcO_i0so7BV4QXxXlbPiSVppYmAV6DAz4c0
+id: sex_la
+label: ເພດ
+category: Demographic
+likert: false
+options: "ຊາຍ: ຊາຍ\nຍີງ: ຍີງ"

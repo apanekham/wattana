@@ -112,8 +112,10 @@ dependencies:
   module:
     - datetime
     - field_group
+    - field_layout
     - file
     - image
+    - layout_discovery
     - paragraphs
     - telephone
     - text
@@ -339,6 +341,10 @@ third_party_settings:
         formatter: closed
         required_fields: true
       label: ເອກະສານຕິດຂັດ
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
 id: user.user.student

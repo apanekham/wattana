@@ -1,0 +1,19 @@
+uuid: e22f1329-0230-4604-842d-b92b97df1698
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - telephone
+id: node.field_std_urgent_office_tel
+field_name: field_std_urgent_office_tel
+entity_type: node
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

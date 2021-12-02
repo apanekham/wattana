@@ -1,0 +1,21 @@
+uuid: 67afc6b2-a856-42d0-8332-b0a91f2bd9df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_agree_activity
+    - node.type.students
+  module:
+    - options
+id: node.students.field_std_agree_activity
+field_name: field_std_agree_activity
+entity_type: node
+bundle: students
+label: ໃຫ້ລູກເຂົ້າຮ່ວມກິດຈະກຳນອກສະຖານທີຂອງໂຮງຮຽນ
+description: "<em>ການອອກເຮັດກິດຈະກຳນອກສະຖານທີໂຮງຮຽນ</em><br />\r\nການເຮັດກິດຈະກຳນອກສະຖານທີ່ໂຮງຮຽນເປັນໜຶ່ງໃນຫຼັກສູດການຮຽນການສອນຂອງໂຮງຮຽນວັດທະນາ ເຊິ່ງຈະເລີ່ມຕັ້ງແຕ່ ອະນຸບານ 1 ຂື້ນໄປ ເພື່ອໃຫ້ນັກຮຽນໄດ້ຮັບປະສົບການຕົວຈິ່ງປະສົມປະສານກັບການຮຽນກັບທີ່ໃນໂຮງຮຽນ. ສ່ວນກິດຈະກຳ ແລະ ສະຖານທີ່ຈະຖືກກຳນົດເປັນແຕ່ລະໄລ່ຍະ ແລ້ວຈະແຈ້ງໃຫ້ທາງຜູ້ປົກຄອງຮັບຊາບ ແລະ ເຊັນໃບອານຸມັດຍິນຍອມອີກເທື່ອໜຶ່ງ. ກະລຸນາຕິກຂ້າງລຸ່ມເພື່ອເປັນຂໍ້ມູນໃຫ້ແກ່ໂຮງຮຽນ.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

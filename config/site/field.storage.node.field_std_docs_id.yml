@@ -1,0 +1,23 @@
+uuid: 6ec2572a-5a83-4bf3-ba7d-7715da93ea82
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_std_docs_id
+field_name: field_std_docs_id
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

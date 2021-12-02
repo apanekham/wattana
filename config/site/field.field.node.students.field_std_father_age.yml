@@ -1,0 +1,23 @@
+uuid: 5b7cbe39-6f92-4916-bb17-b00a81a31d9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_father_age
+    - node.type.students
+id: node.students.field_std_father_age
+field_name: field_std_father_age
+entity_type: node
+bundle: students
+label: ອາຍຸ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

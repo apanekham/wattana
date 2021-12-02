@@ -1,0 +1,14 @@
+uuid: 66d24a7c-b002-48f9-b6a1-bbb2fc7db67e
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: aaEeYBWoWETLKX2ivmZBpUAd3uPe2iPNydaxBuLPXKc
+id: eikhwng
+label: ເມືອງ
+category: Geographic
+likert: false
+options: "' ເມືອງຈັນທະບູລີ': ' ເມືອງຈັນທະບູລີ'\nເມືອງສີໂຄດຕະບອງ: ເມືອງສີໂຄດຕະບອງ\nເມືອງໄຊເສດຖາ: ເມືອງໄຊເສດຖາ\nເມືອງສີສັດຕະນາກ: ເມືອງສີສັດຕະນາກ\nເມືອງນາຊາຍທອງ: ເມືອງນາຊາຍທອງ\nເມືອງໄຊທານີ: ເມືອງໄຊທານີ\nເມືອງຫາດຊາຍຟອງ: ເມືອງຫາດຊາຍຟອງ\nເມືອງສັງທອງ: ເມືອງສັງທອງ\nເມືອງປາກງື່ມ: ເມືອງປາກງື່ມ"

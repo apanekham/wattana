@@ -1,0 +1,37 @@
+uuid: a2d7045d-a7dc-49dd-922f-cc77af473eb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_cousin_name
+    - node.type.students
+    - paragraphs.paragraphs_type.reg_std_cousins
+  module:
+    - entity_reference_revisions
+id: node.students.field_std_cousin_name
+field_name: field_std_cousin_name
+entity_type: node
+bundle: students
+label: 'ລາຍຊື່ອ້າຍເອື້ອຍນ້ອງ ຫຼື ຍາດພີ່ນ້ອງເຂົ້າໂຮງຮຽນວັດທະນາ'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      reg_std_cousins: reg_std_cousins
+    target_bundles_drag_drop:
+      reg_child:
+        weight: 4
+        enabled: false
+      reg_sibling:
+        weight: 5
+        enabled: false
+      reg_std_cousins:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: 7bdb2c7a-9c00-4e09-a0f3-6cdb6a3d755e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_std_mother_occupation
+field_name: field_std_mother_occupation
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

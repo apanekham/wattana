@@ -1,0 +1,19 @@
+uuid: 78491b56-20bc-4c72-ac44-0d37372bb3e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_num
+    - node.type.students
+id: node.students.field_std_num
+field_name: field_std_num
+entity_type: node
+bundle: students
+label: ເລກທີ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

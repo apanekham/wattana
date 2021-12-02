@@ -1,0 +1,21 @@
+uuid: fc5d0261-fa7c-49b9-9cc3-d888cc5c3134
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_father_home_tel
+    - node.type.students
+  module:
+    - telephone
+id: node.students.field_std_father_home_tel
+field_name: field_std_father_home_tel
+entity_type: node
+bundle: students
+label: ເບີໂທບ້ານ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

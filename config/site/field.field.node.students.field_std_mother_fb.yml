@@ -1,0 +1,19 @@
+uuid: 4d0845cc-d985-4209-bc78-1440a8de7bf9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_mother_fb
+    - node.type.students
+id: node.students.field_std_mother_fb
+field_name: field_std_mother_fb
+entity_type: node
+bundle: students
+label: Facebook
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

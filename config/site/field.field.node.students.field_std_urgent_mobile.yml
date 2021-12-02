@@ -1,0 +1,21 @@
+uuid: 6079f3c9-8926-4a4a-873c-06ca8eceff7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_urgent_mobile
+    - node.type.students
+  module:
+    - telephone
+id: node.students.field_std_urgent_mobile
+field_name: field_std_urgent_mobile
+entity_type: node
+bundle: students
+label: ເບີມືຖື
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

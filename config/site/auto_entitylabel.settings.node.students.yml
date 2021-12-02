@@ -1,0 +1,9 @@
+status: 1
+pattern: '[node:field_std_la_fname] [node:field_std_la_lname]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.students

@@ -307,7 +307,7 @@ function webform_preprocess_select(&$variables) {
   // @see \Drupal\webform\Element\WebformOtherBase::processWebformOther
   // @see template_preprocess_select().
   if (!empty($element['#sort_options']) && !empty($element['#webform_other'])) {
-    $options =& $variables['options'];
+    $options = &$variables['options'];
     foreach ($options as $index => $option) {
       if ($option['value'] === WebformSelectOther::OTHER_OPTION) {
         unset($options[$index]);
@@ -517,6 +517,19 @@ function webform_preprocess_form_element(&$variables) {
     $variables['description_display'] = $element['#description_display'];
   }
 
+  // Issue #2700439: Description class not added to
+  // form-element.html.twig template.
+  // @see https://www.drupal.org/project/drupal/issues/2700439
+  if (isset($variables['description_display']) && $variables['description_display'] === 'before') {
+    // Add system .description class.
+    if (isset($variables['description'])) {
+      if (empty($variables['description']['attributes'])) {
+        $variables['description']['attributes'] = new Attribute();
+      }
+      $variables['description']['attributes']->addClass('description');
+    }
+  }
+
   // Add missing classes to the Claro theme's form elements.
   // @see core/modules/system/templates/form-element.html.twig
   // @see claro/templates/form-element.html.twig
@@ -700,7 +713,7 @@ function webform_preprocess_image(&$variables) {
  * reset the element's 'attributes';
  */
 function _webform_preprocess_options(array &$variables) {
-  $element =& $variables['element'];
+  $element = &$variables['element'];
 
   $variables['attributes']['class'][] = Html::getClass('js-webform-' . $element['#type']);
 
@@ -726,7 +739,7 @@ function _webform_preprocess_options(array &$variables) {
  * @see /webform/templates/webform-section.html.twig
  */
 function _webform_preprocess_element(array &$variables, $title_parents = ['title']) {
-  $element =& $variables['element'];
+  $element = &$variables['element'];
   $type = (isset($element['#type'])) ? $element['#type'] : '';
 
   // Fix details 'description' property which does not have description.content.
@@ -835,7 +848,7 @@ function _webform_preprocess_description_help(array &$variables) {
  * Append #help to title or element variable.
  */
 function _webform_preprocess_help(array &$variables, $title_parents = ['title']) {
-  $element =& $variables['element'];
+  $element = &$variables['element'];
   $type = (isset($element['#type'])) ? $element['#type'] : '';
 
   if (empty($element['#help'])) {
@@ -866,7 +879,7 @@ function _webform_preprocess_help(array &$variables, $title_parents = ['title'])
   }
   else {
     $variables += [$target => []];
-    $target_element =& $variables[$target];
+    $target_element = &$variables[$target];
   }
 
   // Default #help_title to element's #title.

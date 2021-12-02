@@ -6,4 +6,5 @@ id: parents
 label: ຜູ້ປົກຄອງນັກຮຽນ
 weight: 11
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create students content'

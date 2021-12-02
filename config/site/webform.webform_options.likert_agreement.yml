@@ -1,4 +1,4 @@
-uuid: 20b1a9bc-1f49-448a-9b2f-18305aa87526
+uuid: 131d9e1e-c425-4d35-8ee6-a020aaacb16a
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     module:
       - webform
 _core:
-  default_config_hash: '-NQROvgYPm-rqn_e6mytSaxmdhSViUinffVfQhp7APs'
+  default_config_hash: nPp-CfMKrP0yDMtyO0wQRwawEqaJVAPzQapinXmDgyU
 id: likert_agreement
 label: 'Likert: Agreement'
 category: Likert
 likert: true
-options: "1: 'Much Worse'\n2: 'Somewhat Worse'\n3: 'About the Same'\n4: 'Somewhat Better'\n5: 'Much Better'\n"
+options: "1: Strongly Disagree\n2: Disagree\n3: Neutral\n4: Agree\n5: Strongly Agree\n"

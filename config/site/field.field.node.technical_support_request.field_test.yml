@@ -1,0 +1,25 @@
+uuid: 03d92e8a-511f-446a-a3c3-663a935150cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test
+    - node.type.technical_support_request
+  module:
+    - webform
+id: node.technical_support_request.field_test
+field_name: field_test
+entity_type: node
+bundle: technical_support_request
+label: test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

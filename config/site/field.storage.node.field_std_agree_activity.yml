@@ -1,0 +1,27 @@
+uuid: 68abf562-e993-41bc-8aae-481dc7bf77ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_std_agree_activity
+field_name: field_std_agree_activity
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ອະນຸຍາດ
+      label: ອະນຸຍາດ
+    -
+      value: ບໍ່ອະນຸຍາດ
+      label: ບໍ່ອະນຸຍາດ
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: 186b00ea-f434-453d-a335-10ad60c67d73
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_std_urgent_name
+field_name: field_std_urgent_name
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
