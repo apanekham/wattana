@@ -26,7 +26,8 @@ use Drupal\node\Entity\Node;
  */
 function maestro_custom_maestro_batch_handlers() {
   return [
-    'custom_spv_content_user_fetch' => t('Retrieve the entity reference and store it as a process variable'),
+	  'custom_spv_content_user_fetch' => t('Retrieve the entity reference and store it as a process variable'),
+	  'check_is_user' => t('Check if anonymous to create user account'),  
   ];
   //return $handlers;
 }
@@ -40,7 +41,8 @@ function maestro_custom_maestro_batch_handlers() {
 function maestro_custom_maestro_interactive_handlers() {
   return [
     'custom_spv_content_user_fetch' => t('Simple retrieve the entity reference and store it as a process variable.'),
-  ];
+    
+ ];
 }
 
 /**
@@ -71,4 +73,20 @@ function custom_spv_content_user_fetch($uniqueIdentifier, $field, $queueID, $pro
   }
 
   return $returnValue;
+}
+function check_is_user($processID, $queueID) {
+
+	//$message = 'You are not log in. Please register.';
+	//MaestroEngine::setProcessVariable('message', $message, $processID);
+       // $logged_in = 0
+  $current= \Drupal::currentUser();
+  if (!$current->id()) {
+	  $message = 'New user has been created';
+	  MaestroEngine::setProcessVariable('message', $message, $processID);
+	  return TRUE;
+	  //
+  }
+  else {
+          return TRUE;
+  }
 }
