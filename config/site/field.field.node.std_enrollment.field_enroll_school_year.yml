@@ -1,0 +1,29 @@
+uuid: ebe10537-3786-43fe-aeea-34fade20c7cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enroll_school_year
+    - node.type.std_enrollment
+    - taxonomy.vocabulary.school_year
+id: node.std_enrollment.field_enroll_school_year
+field_name: field_enroll_school_year
+entity_type: node
+bundle: std_enrollment
+label: ສົກຮຽນ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      school_year: school_year
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: tags
+field_type: entity_reference

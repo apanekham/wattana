@@ -1,0 +1,29 @@
+uuid: d4a611e6-113f-4beb-8b29-dabffbfd00dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_class_level
+    - node.type.classroom
+    - taxonomy.vocabulary.class_level
+id: node.classroom.field_class_level
+field_name: field_class_level
+entity_type: node
+bundle: classroom
+label: ຊັ້ນຮຽນ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      class_level: class_level
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -61,6 +61,7 @@ dependencies:
     - field.field.node.students.field_std_pre_school_name
     - field.field.node.students.field_std_school_year
     - field.field.node.students.field_std_sex
+    - field.field.node.students.field_std_title
     - field.field.node.students.field_std_urgent_address
     - field.field.node.students.field_std_urgent_email
     - field.field.node.students.field_std_urgent_facebook
@@ -107,6 +108,7 @@ third_party_settings:
     group_std_student_info:
       children:
         - title
+        - field_std_title
         - field_std_la_fname
         - field_std_la_lname
         - field_std_la_nname
@@ -137,7 +139,7 @@ third_party_settings:
         - field_std_birth_district
         - field_std_birth_province
       parent_name: group_std_student_info
-      weight: 18
+      weight: 10
       format_type: fieldset
       region: content
       format_settings:
@@ -153,7 +155,7 @@ third_party_settings:
         - field_std_addr_district
         - field_std_addr_province
       parent_name: group_std_student_info
-      weight: 21
+      weight: 13
       format_type: fieldset
       region: content
       format_settings:
@@ -474,27 +476,27 @@ content:
           bundle: students
     region: content
   field_std_dob:
-    weight: 16
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_std_docs_id:
-    weight: 11
+    weight: 60
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_std_docs_medical:
-    weight: 12
+    weight: 61
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_std_docs_photo:
-    weight: 10
+    weight: 59
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -502,7 +504,7 @@ content:
     type: image_image
     region: content
   field_std_docs_pickup_photo:
-    weight: 13
+    weight: 62
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -510,7 +512,7 @@ content:
     type: image_image
     region: content
   field_std_en_fname:
-    weight: 12
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -518,7 +520,7 @@ content:
     type: string_textfield
     region: content
   field_std_en_lname:
-    weight: 13
+    weight: 6
     settings:
       size: 60
       placeholder: ''
@@ -526,7 +528,7 @@ content:
     type: string_textfield
     region: content
   field_std_en_nname:
-    weight: 14
+    weight: 7
     settings:
       size: 60
       placeholder: ''
@@ -534,7 +536,7 @@ content:
     type: string_textfield
     region: content
   field_std_ethic:
-    weight: 20
+    weight: 12
     settings:
       size: 60
       placeholder: ''
@@ -542,7 +544,7 @@ content:
     type: string_textfield
     region: content
   field_std_father_address:
-    weight: 17
+    weight: 18
     settings:
       rows: 5
       placeholder: ''
@@ -557,7 +559,7 @@ content:
     type: number
     region: content
   field_std_father_email:
-    weight: 37
+    weight: 20
     settings:
       size: 60
       placeholder: ''
@@ -565,7 +567,7 @@ content:
     type: email_default
     region: content
   field_std_father_fb:
-    weight: 18
+    weight: 19
     settings:
       size: 60
       placeholder: ''
@@ -573,14 +575,14 @@ content:
     type: string_textfield
     region: content
   field_std_father_home_tel:
-    weight: 15
+    weight: 16
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_std_father_mobile:
-    weight: 16
+    weight: 17
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -611,7 +613,7 @@ content:
     type: string_textfield
     region: content
   field_std_father_office:
-    weight: 13
+    weight: 14
     settings:
       size: 60
       placeholder: ''
@@ -619,7 +621,7 @@ content:
     type: string_textfield
     region: content
   field_std_father_office_tel:
-    weight: 14
+    weight: 15
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -672,7 +674,7 @@ content:
     type: text_textarea
     region: content
   field_std_la_fname:
-    weight: 9
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -680,7 +682,7 @@ content:
     type: string_textfield
     region: content
   field_std_la_lname:
-    weight: 10
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -688,7 +690,7 @@ content:
     type: string_textfield
     region: content
   field_std_la_nname:
-    weight: 11
+    weight: 4
     settings:
       size: 60
       placeholder: ''
@@ -696,7 +698,7 @@ content:
     type: string_textfield
     region: content
   field_std_mother_address:
-    weight: 34
+    weight: 35
     settings:
       rows: 5
       placeholder: ''
@@ -711,7 +713,7 @@ content:
     type: number
     region: content
   field_std_mother_email:
-    weight: 36
+    weight: 37
     settings:
       size: 60
       placeholder: ''
@@ -719,7 +721,7 @@ content:
     type: email_default
     region: content
   field_std_mother_fb:
-    weight: 35
+    weight: 36
     settings:
       size: 60
       placeholder: ''
@@ -727,14 +729,14 @@ content:
     type: string_textfield
     region: content
   field_std_mother_home_tel:
-    weight: 32
+    weight: 33
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_std_mother_mobile:
-    weight: 33
+    weight: 34
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -749,14 +751,6 @@ content:
     type: string_textfield
     region: content
   field_std_mother_nationality:
-    weight: 28
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_std_mother_occupation:
     weight: 29
     settings:
       size: 60
@@ -764,7 +758,7 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_std_mother_office:
+  field_std_mother_occupation:
     weight: 30
     settings:
       size: 60
@@ -772,15 +766,23 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_std_mother_office_tel:
+  field_std_mother_office:
     weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_std_mother_office_tel:
+    weight: 32
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_std_nationality:
-    weight: 19
+    weight: 11
     settings:
       size: 60
       placeholder: ''
@@ -788,7 +790,7 @@ content:
     type: string_textfield
     region: content
   field_std_new_class:
-    weight: 56
+    weight: 63
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -806,13 +808,13 @@ content:
     type: string_textfield
     region: content
   field_std_pre_school:
-    weight: 51
+    weight: 59
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_std_pre_school_class:
-    weight: 53
+    weight: 61
     settings:
       size: 60
       placeholder: ''
@@ -820,14 +822,14 @@ content:
     type: string_textfield
     region: content
   field_std_pre_school_docs:
-    weight: 54
+    weight: 62
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_std_pre_school_name:
-    weight: 52
+    weight: 60
     settings:
       size: 60
       placeholder: ''
@@ -835,7 +837,7 @@ content:
     type: string_textfield
     region: content
   field_std_school_year:
-    weight: 57
+    weight: 64
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -845,13 +847,19 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_std_sex:
-    weight: 15
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_std_title:
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_std_urgent_address:
-    weight: 43
+    weight: 44
     settings:
       rows: 5
       placeholder: ''
@@ -859,7 +867,7 @@ content:
     type: string_textarea
     region: content
   field_std_urgent_email:
-    weight: 45
+    weight: 46
     settings:
       size: 60
       placeholder: ''
@@ -867,7 +875,7 @@ content:
     type: email_default
     region: content
   field_std_urgent_facebook:
-    weight: 44
+    weight: 45
     settings:
       size: 60
       placeholder: ''
@@ -875,14 +883,14 @@ content:
     type: string_textfield
     region: content
   field_std_urgent_home_tel:
-    weight: 41
+    weight: 42
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_std_urgent_mobile:
-    weight: 42
+    weight: 43
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -897,7 +905,7 @@ content:
     type: string_textfield
     region: content
   field_std_urgent_office_tel:
-    weight: 40
+    weight: 41
     settings:
       placeholder: ''
     third_party_settings: {  }

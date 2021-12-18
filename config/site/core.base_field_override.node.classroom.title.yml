@@ -1,0 +1,18 @@
+uuid: 9bb2324d-6be6-47cc-8b46-26a18a082fb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.classroom
+id: node.classroom.title
+field_name: title
+entity_type: node
+bundle: classroom
+label: ຊື່ຫ້ອງຮຽນ
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+login_redirection:
+  anonymous: null
+  authenticated: /
+  administrator: /
+  maestro_example: /
+  board_of_management: /
+  managing_director: /
+  deputy_managing_director: /
+  administration_staff: /
+  accounting_staff: /
+  teacher: /
+  students: /
+  parents: /
+exclude_urls: ''

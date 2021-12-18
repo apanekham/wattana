@@ -1,0 +1,29 @@
+uuid: 1c4ec6ce-5b7f-4443-a055-237f5b47f3f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_school_year
+    - node.type.classroom
+    - taxonomy.vocabulary.school_year
+id: node.classroom.field_school_year
+field_name: field_school_year
+entity_type: node
+bundle: classroom
+label: ສົກປີ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      school_year: school_year
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

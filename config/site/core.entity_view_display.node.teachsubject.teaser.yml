@@ -1,0 +1,45 @@
+uuid: 0e8afb31-b0e5-46e2-8199-7ab880e88441
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.teachsubject.body
+    - field.field.node.teachsubject.field_ts_classroom
+    - field.field.node.teachsubject.field_ts_subject
+    - field.field.node.teachsubject.field_ts_teacher
+    - field.field.node.teachsubject.field_ts_timetable
+    - node.type.teachsubject
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.teachsubject.teaser
+targetEntityType: node
+bundle: teachsubject
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_ts_classroom: true
+  field_ts_subject: true
+  field_ts_teacher: true
+  field_ts_timetable: true

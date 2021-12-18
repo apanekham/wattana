@@ -1,0 +1,39 @@
+uuid: 8b116ae4-8c10-42bd-8f58-4942c7a5d672
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.administration
+  module:
+    - menu_block
+    - user
+  theme:
+    - bartik
+id: administrationtools
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'menu_block:administration'
+settings:
+  id: 'menu_block:administration'
+  label: 'Administration Tools'
+  provider: menu_block
+  label_display: visible
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'administration:'
+  suggestion: administration
+  label_type: block
+  label_link: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

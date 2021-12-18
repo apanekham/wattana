@@ -1,0 +1,10 @@
+uuid: f8fdd896-e71c-4454-9d8f-02ce54a6a88d
+langcode: en
+status: true
+dependencies: {  }
+id: subjects
+label: ວີຊາ
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

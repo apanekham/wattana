@@ -1,0 +1,49 @@
+uuid: 59c953bf-61de-4f5d-8692-59c38294265d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.std_enrollment.body
+    - field.field.node.std_enrollment.field_enroll_classroom
+    - field.field.node.std_enrollment.field_enroll_date
+    - field.field.node.std_enrollment.field_enroll_school_year
+    - field.field.node.std_enrollment.field_enroll_semester
+    - field.field.node.std_enrollment.field_enroll_student
+    - field.field.node.std_enrollment.field_student_num
+    - node.type.std_enrollment
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.std_enrollment.teaser
+targetEntityType: node
+bundle: std_enrollment
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_enroll_classroom: true
+  field_enroll_date: true
+  field_enroll_school_year: true
+  field_enroll_semester: true
+  field_enroll_student: true
+  field_student_num: true

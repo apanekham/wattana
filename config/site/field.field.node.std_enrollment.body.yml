@@ -1,0 +1,23 @@
+uuid: 82ea6f75-df09-4915-9afa-2c2763214524
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.std_enrollment
+  module:
+    - text
+id: node.std_enrollment.body
+field_name: body
+entity_type: node
+bundle: std_enrollment
+label: ໝາຍເຫດ
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

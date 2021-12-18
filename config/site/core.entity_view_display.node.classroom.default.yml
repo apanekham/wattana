@@ -1,0 +1,79 @@
+uuid: e7393a27-8d88-473a-bbc3-0bee46186ff7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.classroom.body
+    - field.field.node.classroom.field_class_assistant
+    - field.field.node.classroom.field_class_level
+    - field.field.node.classroom.field_class_num
+    - field.field.node.classroom.field_class_subjects
+    - field.field.node.classroom.field_homeroom
+    - field.field.node.classroom.field_school_year
+    - field.field.node.classroom.field_student_enroll
+    - node.type.classroom
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.classroom.default
+targetEntityType: node
+bundle: classroom
+mode: default
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_class_assistant:
+    weight: 1
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_class_subjects:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_homeroom:
+    weight: 0
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_student_enroll:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_class_level: true
+  field_class_num: true
+  field_school_year: true

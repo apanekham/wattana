@@ -1,0 +1,23 @@
+uuid: e82b7b9f-3b45-415f-ba09-a80c704ceb5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.teachsubject
+  module:
+    - text
+id: node.teachsubject.body
+field_name: body
+entity_type: node
+bundle: teachsubject
+label: ໝາຍເຫດ
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

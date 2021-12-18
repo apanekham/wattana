@@ -1,0 +1,20 @@
+uuid: 7286bd6c-da03-4ab9-819f-9726fa26ae1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_enroll_semester
+field_name: field_enroll_semester
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

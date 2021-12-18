@@ -1,0 +1,9 @@
+status: 1
+pattern: '[node:field_class_level][node:field_class_num]-[node:field_school_year]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.classroom

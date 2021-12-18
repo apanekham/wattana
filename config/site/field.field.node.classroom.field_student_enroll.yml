@@ -1,0 +1,28 @@
+uuid: 42088ca2-6ca3-4561-a566-2743bb15d0ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_student_enroll
+    - node.type.classroom
+    - node.type.std_enrollment
+id: node.classroom.field_student_enroll
+field_name: field_student_enroll
+entity_type: node
+bundle: classroom
+label: ນັກຮຽນ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      std_enrollment: std_enrollment
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

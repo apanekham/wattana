@@ -1,0 +1,130 @@
+uuid: 089a0387-d747-4777-8182-73162ce95a12
+langcode: en
+status: true
+dependencies: {  }
+id: student_registration
+label: 'Student registration'
+app_group: 0
+canvas_height: 900
+canvas_width: 800
+default_workflow_timeline_stage_count: 0
+show_details: false
+validated: true
+views_attached:
+  maestro_entity_identifiers:
+    view_machine_name: maestro_entity_identifiers
+    view_weight: -10
+    view_display: 'taskconsole_display;Task Console Display'
+  maestro_completed_tasks:
+    view_machine_name: maestro_completed_tasks
+    view_weight: -9
+    view_display: default;Master
+variables:
+  initiator:
+    variable_id: initiator
+    variable_value: '0'
+  workflow_timeline_stage_count:
+    variable_id: workflow_timeline_stage_count
+    variable_value: ''
+  workflow_current_stage:
+    variable_id: workflow_current_stage
+    variable_value: ''
+  workflow_current_stage_message:
+    variable_id: workflow_current_stage_message
+    variable_value: ''
+  message:
+    variable_id: message
+    variable_value: 'You are logged in'
+  logged_in:
+    variable_id: logged_in
+    variable_value: '0'
+initiator: null
+workflow_timeline_stage_count: null
+workflow_current_stage: null
+workflow_current_stage_message: null
+tasks:
+  start:
+    id: start
+    tasktype: MaestroStart
+    label: Start
+    nextstep: check_user
+    nextfalsestep: ''
+    top: '30'
+    left: '20'
+    assignby: fixed
+    assignto: engine
+  end:
+    id: end
+    tasktype: MaestroEnd
+    label: End
+    nextstep: ''
+    nextfalsestep: ''
+    top: '200'
+    left: '200'
+    assignby: fixed
+    assignto: engine
+  show_msg:
+    id: show_msg
+    label: 'Show message'
+    tasktype: MaestroInteractive
+    nextstep: end
+    nextfalsestep: ''
+    top: '25'
+    left: '325'
+    assignby: fixed
+    assignto: ''
+    raphael: ''
+    to: ''
+    pointedfrom: ''
+    falsebranch: ''
+    lines: {  }
+    handler: maestro_show_message_form
+    data:
+      modal: modal
+      redirect_to: taskconsole
+    assigned: 'user:fixed:admin'
+    runonce: false
+    showindetail: true
+    participate_in_workflow_status_stage: false
+    workflow_status_stage_number: 0
+    workflow_status_stage_message: ''
+    notifications:
+      notification_assignment_subject: ''
+      notification_assignment: ''
+      notification_reminder_subject: ''
+      notification_reminder: ''
+      notification_escalation_subject: ''
+      notification_escalation: ''
+      reminder_after: 0
+      escalation_after: 0
+  check_user:
+    id: check_user
+    label: 'Check user'
+    tasktype: MaestroBatchFunction
+    nextstep: show_msg
+    nextfalsestep: ''
+    top: '30'
+    left: '170'
+    assignby: fixed
+    assignto: ''
+    raphael: ''
+    to: ''
+    pointedfrom: ''
+    falsebranch: ''
+    lines: {  }
+    handler: check_is_user
+    assigned: ''
+    runonce: false
+    showindetail: true
+    participate_in_workflow_status_stage: false
+    workflow_status_stage_number: 0
+    workflow_status_stage_message: ''
+    notifications:
+      notification_assignment_subject: null
+      notification_assignment: null
+      notification_reminder_subject: null
+      notification_reminder: null
+      notification_escalation_subject: null
+      notification_escalation: null
+      reminder_after: null
+      escalation_after: null

@@ -1,0 +1,31 @@
+uuid: c0e83dd0-2653-43c2-a59e-ed5920833431
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subject_timetable
+    - paragraphs.paragraphs_type.subjects
+  module:
+    - smart_date
+    - smart_date_recur
+third_party_settings:
+  smart_date_recur:
+    allow_recurring: true
+    month_limit: 12
+id: paragraph.subjects.field_subject_timetable
+field_name: field_subject_timetable
+entity_type: paragraph
+bundle: subjects
+label: ໂມງສອນ
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: ''
+    default_date: ''
+    default_duration_increments: "30\r\n60|1 hour\r\n90\r\n120|2 hours\r\ncustom"
+    default_duration: 60
+default_value_callback: ''
+settings: {  }
+field_type: smartdate

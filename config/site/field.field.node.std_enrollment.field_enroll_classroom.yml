@@ -1,0 +1,29 @@
+uuid: 5acffc75-150d-414b-bf56-c24ed3d68962
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enroll_classroom
+    - node.type.classroom
+    - node.type.std_enrollment
+id: node.std_enrollment.field_enroll_classroom
+field_name: field_enroll_classroom
+entity_type: node
+bundle: std_enrollment
+label: ຫ້ອງຮຽນ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      classroom: classroom
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

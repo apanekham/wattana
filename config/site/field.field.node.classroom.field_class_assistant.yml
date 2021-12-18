@@ -1,0 +1,40 @@
+uuid: 69ddc65c-b709-4457-bd85-de75026e0e79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_class_assistant
+    - node.type.classroom
+id: node.classroom.field_class_assistant
+field_name: field_class_assistant
+entity_type: node
+bundle: classroom
+label: ຜູ້ຊ່ວຍຄູ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        teacher: teacher
+        administrator: '0'
+        maestro_example: '0'
+        board_of_management: '0'
+        managing_director: '0'
+        deputy_managing_director: '0'
+        administration_staff: '0'
+        accounting_staff: '0'
+        students: '0'
+        parents: '0'
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

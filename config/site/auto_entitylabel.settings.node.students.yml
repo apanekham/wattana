@@ -1,8 +1,8 @@
 status: 1
-pattern: '[node:field_std_la_fname] [node:field_std_la_lname]'
+pattern: '[node:field_std_title] [node:field_std_la_fname] [node:field_std_la_lname] ([node:field_std_la_nname])'
 escape: false
 preserve_titles: false
-save: false
+save: true
 chunk: 50
 dependencies:
   config:

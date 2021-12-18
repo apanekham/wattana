@@ -1,0 +1,22 @@
+uuid: 81c0c252-916d-4f77-8f1b-47b1b0210cfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.teachsubject
+id: node.teachsubject.promote
+field_name: promote
+entity_type: node
+bundle: teachsubject
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

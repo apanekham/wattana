@@ -1,0 +1,44 @@
+uuid: 146ee773-97b4-44c1-9d4e-951f87b6ba26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.subjects.field_subject_teach
+    - field.field.paragraph.subjects.field_subject_timetable
+    - paragraphs.paragraphs_type.subjects
+  module:
+    - field_layout
+    - layout_discovery
+    - smart_date
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.subjects.default
+targetEntityType: paragraph
+bundle: subjects
+mode: default
+content:
+  field_subject_teach:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_subject_timetable:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      force_chronological: false
+      add_classes: false
+      time_wrapper: true
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: smartdate_default
+    region: content
+hidden: {  }

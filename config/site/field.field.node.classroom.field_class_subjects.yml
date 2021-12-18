@@ -1,0 +1,40 @@
+uuid: b4fdf4d1-0691-4f31-b8f6-3c88e30cf34b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_class_subjects
+    - node.type.classroom
+    - paragraphs.paragraphs_type.subjects
+  module:
+    - entity_reference_revisions
+id: node.classroom.field_class_subjects
+field_name: field_class_subjects
+entity_type: node
+bundle: classroom
+label: ວິຊາ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      subjects: subjects
+    target_bundles_drag_drop:
+      reg_child:
+        weight: 5
+        enabled: false
+      reg_sibling:
+        weight: 6
+        enabled: false
+      reg_std_cousins:
+        weight: 7
+        enabled: false
+      subjects:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions

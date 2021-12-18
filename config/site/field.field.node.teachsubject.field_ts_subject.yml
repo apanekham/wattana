@@ -1,0 +1,29 @@
+uuid: c275d745-48ef-441f-96cb-1050a25bf320
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ts_subject
+    - node.type.teachsubject
+    - taxonomy.vocabulary.subjects
+id: node.teachsubject.field_ts_subject
+field_name: field_ts_subject
+entity_type: node
+bundle: teachsubject
+label: ວິຊາທີ່ສອນ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      subjects: subjects
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

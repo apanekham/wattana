@@ -1,0 +1,28 @@
+uuid: 0e16e3ba-0e4e-4769-ab20-95f27c84bb91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ts_classroom
+    - node.type.classroom
+    - node.type.teachsubject
+id: node.teachsubject.field_ts_classroom
+field_name: field_ts_classroom
+entity_type: node
+bundle: teachsubject
+label: ຫ້ອງຮຽນ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      classroom: classroom
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

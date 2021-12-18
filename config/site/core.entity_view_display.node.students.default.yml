@@ -61,6 +61,7 @@ dependencies:
     - field.field.node.students.field_std_pre_school_name
     - field.field.node.students.field_std_school_year
     - field.field.node.students.field_std_sex
+    - field.field.node.students.field_std_title
     - field.field.node.students.field_std_urgent_address
     - field.field.node.students.field_std_urgent_email
     - field.field.node.students.field_std_urgent_facebook
@@ -79,6 +80,7 @@ dependencies:
     - image
     - layout_discovery
     - options
+    - telephone
     - text
     - user
 third_party_settings:
@@ -88,8 +90,8 @@ third_party_settings:
         - field_std_birth_ban
         - field_std_birth_district
         - field_std_birth_province
-      parent_name: group_pahwdhnymnknyn
-      weight: 41
+      parent_name: ''
+      weight: 11
       format_type: fieldset
       region: content
       format_settings:
@@ -103,8 +105,8 @@ third_party_settings:
         - field_std_addr_ban
         - field_std_addr_district
         - field_std_addr_province
-      parent_name: group_pahwdhnymnknyn
-      weight: 44
+      parent_name: ''
+      weight: 12
       format_type: fieldset
       region: content
       format_settings:
@@ -113,6 +115,139 @@ third_party_settings:
         classes: ''
         description: ''
       label: ທີ່ຢູ່ປະຈຸບັນທີ່ຕິດຕໍ່ໄດ້
+    group_std_d_info:
+      children:
+        - field_std_mother_name
+        - field_std_mother_age
+        - field_std_mother_nationality
+        - field_std_mother_occupation
+        - field_std_mother_office
+        - field_std_mother_office_tel
+        - field_std_mother_home_tel
+        - field_std_mother_mobile
+        - field_std_mother_address
+        - field_std_mother_fb
+        - field_std_mother_email
+      parent_name: ''
+      weight: 14
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: ຂໍ້ມູນແມ່
+    group_std_d_family_info:
+      children:
+        - field_std_father_name
+        - field_std_father_age
+        - field_std_father_nationality
+        - field_std_father_occupation
+        - field_std_father_office
+        - field_std_father_office_tel
+        - field_std_father_home_tel
+        - field_std_father_mobile
+        - field_std_father_address
+        - field_std_father_fb
+        - field_std_father_email
+      parent_name: ''
+      weight: 13
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: ຂໍ້ມູນພໍ່
+    group_std_urgent_contact:
+      children:
+        - field_std_urgent_name
+        - field_std_urgent_rel
+        - field_std_urgent_office_tel
+        - field_std_urgent_home_tel
+        - field_std_urgent_mobile
+        - field_std_urgent_address
+        - field_std_urgent_facebook
+        - field_std_urgent_email
+      parent_name: ''
+      weight: 15
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+      label: ກໍລະນີສຸກເສີນຕິດຕໍ່
+    group_std_gen_info:
+      children:
+        - field_std_gen_allergy
+        - field_std_gen_allergy_detail
+        - field_std_gen_disease
+        - field_field_std_gen_dis_detial
+        - field_std_gen_instruction
+        - field_std_cousin
+        - field_std_cousin_name
+      parent_name: ''
+      weight: 16
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+      label: ຂໍ້ມູນທົ່ວໄປຂອງນັກຮຽນ
+    group_std_pre_school:
+      children:
+        - field_std_pre_school
+        - field_std_pre_school_name
+        - field_std_pre_school_class
+        - field_std_pre_school_docs
+        - field_std_new_class
+        - field_std_school_year
+      parent_name: ''
+      weight: 17
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+      label: ຂໍ້ມູນການຮຽນ
+    group_std_agreement:
+      children:
+        - field_std_agree_activity
+        - field_std_agree_public
+      parent_name: ''
+      weight: 18
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+      label: ການຍິນຍອມຂອງຜູ້ປົກຄອງ
+    group_std_docs:
+      children:
+        - field_std_docs_photo
+        - field_std_docs_medical
+        - field_std_docs_id
+        - field_std_docs_pickup_photo
+      parent_name: ''
+      weight: 19
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+      label: ເອກະສານຂອງນັກຮຽນ
   field_layout:
     id: layout_onecol
     settings:
@@ -123,7 +258,7 @@ bundle: students
 mode: default
 content:
   field_field_std_gen_dis_detial:
-    weight: 79
+    weight: 21
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -131,7 +266,7 @@ content:
     region: content
   field_std_addr_ban:
     weight: 2
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -139,7 +274,7 @@ content:
     region: content
   field_std_addr_district:
     weight: 3
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -147,28 +282,28 @@ content:
     region: content
   field_std_addr_province:
     weight: 4
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_std_agree_activity:
-    weight: 86
-    label: above
+    weight: 25
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_std_agree_public:
-    weight: 87
-    label: above
+    weight: 26
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_std_birth_ban:
     weight: 20
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -176,7 +311,7 @@ content:
     region: content
   field_std_birth_district:
     weight: 21
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -184,30 +319,30 @@ content:
     region: content
   field_std_birth_province:
     weight: 22
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_std_cousin:
-    weight: 80
-    label: above
+    weight: 23
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_std_cousin_name:
     type: entity_reference_revisions_entity_view
-    weight: 81
-    label: above
+    weight: 24
+    label: inline
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: content
   field_std_dob:
-    weight: 40
-    label: above
+    weight: 8
+    label: inline
     settings:
       format_type: medium
       timezone_override: ''
@@ -215,7 +350,7 @@ content:
     type: datetime_default
     region: content
   field_std_docs_id:
-    weight: 90
+    weight: 23
     label: above
     settings:
       use_description_as_link_text: true
@@ -223,7 +358,7 @@ content:
     type: file_default
     region: content
   field_std_docs_medical:
-    weight: 89
+    weight: 22
     label: above
     settings:
       use_description_as_link_text: true
@@ -231,7 +366,7 @@ content:
     type: file_default
     region: content
   field_std_docs_photo:
-    weight: 88
+    weight: 21
     label: above
     settings:
       image_style: ''
@@ -240,7 +375,7 @@ content:
     type: image
     region: content
   field_std_docs_pickup_photo:
-    weight: 91
+    weight: 24
     label: above
     settings:
       image_style: ''
@@ -249,47 +384,47 @@ content:
     type: image
     region: content
   field_std_en_fname:
-    weight: 36
-    label: above
+    weight: 4
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_en_lname:
-    weight: 37
-    label: above
+    weight: 5
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_en_nname:
-    weight: 38
-    label: above
+    weight: 6
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_ethic:
-    weight: 43
-    label: above
+    weight: 10
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_father_address:
-    weight: 53
-    label: above
+    weight: 12
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_std_father_age:
-    weight: 46
-    label: above
+    weight: 5
+    label: inline
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -297,135 +432,138 @@ content:
     type: number_integer
     region: content
   field_std_father_email:
-    weight: 67
-    label: above
+    weight: 15
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_std_father_fb:
-    weight: 54
-    label: above
+    weight: 14
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_father_home_tel:
-    weight: 51
-    label: above
-    settings: {  }
+    weight: 10
+    label: inline
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_std_father_mobile:
-    weight: 52
-    label: above
-    settings: {  }
+    weight: 11
+    label: inline
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_std_father_name:
-    weight: 45
-    label: above
+    weight: 4
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_father_nationality:
-    weight: 47
-    label: above
+    weight: 6
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_father_occupation:
-    weight: 48
-    label: above
+    weight: 7
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_father_office:
-    weight: 49
-    label: above
+    weight: 8
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_father_office_tel:
-    weight: 50
-    label: above
-    settings: {  }
+    weight: 9
+    label: inline
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_std_gen_allergy:
-    weight: 76
-    label: above
+    weight: 18
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_std_gen_allergy_detail:
-    weight: 77
+    weight: 19
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_std_gen_disease:
-    weight: 78
-    label: above
+    weight: 20
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_std_gen_instruction:
-    weight: 95
+    weight: 22
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_std_la_fname:
-    weight: 33
-    label: above
+    weight: 1
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_la_lname:
-    weight: 34
-    label: above
+    weight: 2
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_la_nname:
-    weight: 35
-    label: above
+    weight: 3
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_mother_address:
-    weight: 64
-    label: above
+    weight: 24
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_std_mother_age:
-    weight: 57
-    label: above
+    weight: 17
+    label: inline
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -433,84 +571,87 @@ content:
     type: number_integer
     region: content
   field_std_mother_email:
-    weight: 66
-    label: above
+    weight: 26
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_std_mother_fb:
-    weight: 65
-    label: above
+    weight: 25
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_mother_home_tel:
-    weight: 62
-    label: above
-    settings: {  }
+    weight: 22
+    label: inline
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_std_mother_mobile:
-    weight: 63
-    label: above
-    settings: {  }
+    weight: 23
+    label: inline
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_std_mother_name:
-    weight: 56
-    label: above
+    weight: 16
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_mother_nationality:
-    weight: 58
-    label: above
+    weight: 18
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_mother_occupation:
-    weight: 59
-    label: above
+    weight: 19
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_mother_office:
-    weight: 60
-    label: above
+    weight: 20
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_mother_office_tel:
-    weight: 61
-    label: above
-    settings: {  }
+    weight: 21
+    label: inline
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_std_nationality:
-    weight: 42
-    label: above
+    weight: 9
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_new_class:
-    weight: 94
-    label: above
+    weight: 23
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
@@ -518,120 +659,124 @@ content:
     region: content
   field_std_num:
     weight: 0
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_pre_school:
-    weight: 82
-    label: above
+    weight: 19
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_std_pre_school_class:
-    weight: 84
-    label: above
+    weight: 21
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_pre_school_docs:
-    weight: 85
-    label: above
+    weight: 22
+    label: inline
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
     region: content
   field_std_pre_school_name:
-    weight: 83
-    label: above
+    weight: 20
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_school_year:
-    weight: 93
-    label: above
+    weight: 24
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_std_sex:
-    weight: 39
-    label: above
+    weight: 7
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_std_urgent_address:
-    weight: 73
-    label: above
+    weight: 22
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_std_urgent_email:
-    weight: 75
-    label: above
+    weight: 24
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_std_urgent_facebook:
-    weight: 74
-    label: above
+    weight: 23
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_urgent_home_tel:
-    weight: 71
-    label: above
-    settings: {  }
+    weight: 20
+    label: inline
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_std_urgent_mobile:
-    weight: 72
-    label: above
-    settings: {  }
+    weight: 21
+    label: inline
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_std_urgent_name:
-    weight: 68
-    label: above
+    weight: 17
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_std_urgent_office_tel:
-    weight: 70
-    label: above
-    settings: {  }
+    weight: 19
+    label: inline
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_std_urgent_rel:
-    weight: 69
-    label: above
+    weight: 18
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   links:
-    weight: 2
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_std_title: true

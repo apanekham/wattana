@@ -11,11 +11,11 @@ third_party_settings:
   multiple_registration:
     user_additional_register_form:
       students: students
+      parents: parents
       authenticated: 0
       administration_staff: 0
       accounting_staff: 0
       teacher: 0
-      parents: 0
     user_additional_register_form_required:
       authenticated: 0
       administration_staff: 0

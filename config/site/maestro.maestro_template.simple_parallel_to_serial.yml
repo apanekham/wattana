@@ -55,8 +55,8 @@ tasks:
     label: End
     nextstep: ''
     nextfalsestep: ''
-    top: '437'
-    left: '221'
+    top: '432'
+    left: '216'
     assignby: fixed
     assignto: engine
   int1:
@@ -91,8 +91,8 @@ tasks:
     tasktype: MaestroInteractive
     nextstep: or
     nextfalsestep: ''
-    top: '87'
-    left: '328'
+    top: '82'
+    left: '323'
     assignby: fixed
     assignto: engine
     handler: ''
@@ -117,8 +117,8 @@ tasks:
     tasktype: MaestroInteractive
     nextstep: end
     nextfalsestep: ''
-    top: '305'
-    left: '205'
+    top: '295'
+    left: '195'
     assignby: fixed
     assignto: engine
     handler: ''

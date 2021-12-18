@@ -1,0 +1,29 @@
+uuid: 4e639838-00db-4f6b-8926-5b8b16121534
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enroll_semester
+    - node.type.std_enrollment
+    - taxonomy.vocabulary.semester
+id: node.std_enrollment.field_enroll_semester
+field_name: field_enroll_semester
+entity_type: node
+bundle: std_enrollment
+label: ພາກຮຽນ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      semester: semester
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

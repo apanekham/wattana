@@ -1,0 +1,21 @@
+uuid: 466663cb-e419-445b-873f-a5f52fecfd18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_std_title
+    - node.type.students
+  module:
+    - options
+id: node.students.field_std_title
+field_name: field_std_title
+entity_type: node
+bundle: students
+label: ຄຳນຳໜ້າ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

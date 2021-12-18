@@ -1,0 +1,19 @@
+uuid: 35924b57-e293-4d36-8632-1ddcabf260b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - smart_date
+id: paragraph.field_subject_timetable
+field_name: field_subject_timetable
+entity_type: paragraph
+type: smartdate
+settings: {  }
+module: smart_date
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

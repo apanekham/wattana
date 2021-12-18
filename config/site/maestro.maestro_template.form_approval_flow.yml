@@ -60,8 +60,8 @@ tasks:
     tasktype: MaestroContentType
     nextstep: spv_turn_off_rejected
     nextfalsestep: ''
-    top: '96'
-    left: '80'
+    top: '86'
+    left: '70'
     assignby: fixed
     assignto: ''
     raphael: ''
@@ -90,8 +90,8 @@ tasks:
     tasktype: MaestroInteractive
     nextstep: if_approved
     nextfalsestep: ''
-    top: '286'
-    left: '380'
+    top: '276'
+    left: '370'
     assignby: fixed
     assignto: ''
     raphael: ''
@@ -175,8 +175,8 @@ tasks:
     tasktype: MaestroSetProcessVariable
     nextstep: set_flow_name
     nextfalsestep: ''
-    top: '118'
-    left: '245'
+    top: '100'
+    left: '227'
     assignby: fixed
     assignto: ''
     raphael: ''
@@ -205,8 +205,8 @@ tasks:
     tasktype: MaestroSetProcessVariable
     nextstep: submit_request
     nextfalsestep: ''
-    top: '232'
-    left: '125'
+    top: '227'
+    left: '120'
     assignby: fixed
     assignto: ''
     raphael: ''

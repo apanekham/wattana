@@ -1,0 +1,18 @@
+uuid: bbbc0d5b-0d47-4d15-a01a-403456f4ee37
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: ຫ້ອງຮຽນ
+type: classroom
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

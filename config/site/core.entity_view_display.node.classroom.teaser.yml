@@ -1,0 +1,51 @@
+uuid: 626da958-1fe5-478e-86d3-c648fe3b3379
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.classroom.body
+    - field.field.node.classroom.field_class_assistant
+    - field.field.node.classroom.field_class_level
+    - field.field.node.classroom.field_class_num
+    - field.field.node.classroom.field_class_subjects
+    - field.field.node.classroom.field_homeroom
+    - field.field.node.classroom.field_school_year
+    - field.field.node.classroom.field_student_enroll
+    - node.type.classroom
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.classroom.teaser
+targetEntityType: node
+bundle: classroom
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_class_assistant: true
+  field_class_level: true
+  field_class_num: true
+  field_class_subjects: true
+  field_homeroom: true
+  field_school_year: true
+  field_student_enroll: true

@@ -62,6 +62,7 @@ dependencies:
     - field.field.node.students.field_std_pre_school_name
     - field.field.node.students.field_std_school_year
     - field.field.node.students.field_std_sex
+    - field.field.node.students.field_std_title
     - field.field.node.students.field_std_urgent_address
     - field.field.node.students.field_std_urgent_email
     - field.field.node.students.field_std_urgent_facebook
@@ -149,6 +150,7 @@ hidden:
   field_std_pre_school_name: true
   field_std_school_year: true
   field_std_sex: true
+  field_std_title: true
   field_std_urgent_address: true
   field_std_urgent_email: true
   field_std_urgent_facebook: true

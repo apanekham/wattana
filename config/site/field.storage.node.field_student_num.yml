@@ -1,0 +1,21 @@
+uuid: 310dc28f-de35-4be4-aea6-cc93f8ba166f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - serial
+id: node.field_student_num
+field_name: field_student_num
+entity_type: node
+type: serial
+settings:
+  start_value: 1
+  init_existing_entities: 0
+module: serial
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

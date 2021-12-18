@@ -1,0 +1,21 @@
+uuid: d6e3fe80-74a2-4ff1-b554-d388435b28ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enroll_date
+    - node.type.std_enrollment
+  module:
+    - datetime
+id: node.std_enrollment.field_enroll_date
+field_name: field_enroll_date
+entity_type: node
+bundle: std_enrollment
+label: ວັນທີລົງທະບຽນ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

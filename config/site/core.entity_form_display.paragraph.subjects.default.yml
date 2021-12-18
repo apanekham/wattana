@@ -1,0 +1,52 @@
+uuid: 27e48967-e58e-4f13-a6b7-2118b95f1d19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.subjects.field_subject_teach
+    - field.field.paragraph.subjects.field_subject_timetable
+    - paragraphs.paragraphs_type.subjects
+  module:
+    - field_layout
+    - layout_discovery
+    - smart_date
+    - smart_date_recur
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.subjects.default
+targetEntityType: paragraph
+bundle: subjects
+mode: default
+content:
+  field_subject_teach:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_subject_timetable:
+    weight: 1
+    settings:
+      show_extra: true
+      hide_date: true
+      modal: false
+      default_duration: 60
+      default_duration_increments: "30\n60|1 hour\n90\n120|2 hours\ncustom"
+    third_party_settings:
+      smart_date_recur:
+        modal: true
+        allowed_recur_freq_values:
+          DAILY: DAILY
+          WEEKLY: WEEKLY
+          MONTHLY: MONTHLY
+          YEARLY: YEARLY
+          MINUTELY: '0'
+          HOURLY: '0'
+    type: smartdate_default
+    region: content
+hidden:
+  created: true
+  status: true

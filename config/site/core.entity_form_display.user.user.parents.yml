@@ -126,18 +126,10 @@ bundle: user
 mode: parents
 content:
   account:
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_reg_address:
-    weight: 8
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-    region: content
   field_reg_en_firstname:
     weight: 3
     settings:
@@ -186,38 +178,16 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_reg_std_urgent_email:
-    type: email_default
-    weight: 7
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_reg_std_urgent_facebook:
-    weight: 11
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_reg_urgent_mobile:
-    weight: 10
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
+  field_reg_phone:
     type: telephone_default
-    region: content
-  field_reg_urgent_tel_home:
-    type: telephone_default
-    weight: 9
+    weight: 6
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
 hidden:
   contact: true
+  field_reg_address: true
   field_reg_birth_address: true
   field_reg_ch_reading: true
   field_reg_ch_speaking: true
@@ -276,7 +246,6 @@ hidden:
   field_reg_mother_office_tel: true
   field_reg_nationality: true
   field_reg_personal_interest: true
-  field_reg_phone: true
   field_reg_religious: true
   field_reg_sibling: true
   field_reg_sibling_no: true
@@ -300,6 +269,8 @@ hidden:
   field_reg_std_previous_docs: true
   field_reg_std_previous_sch: true
   field_reg_std_previous_sch_name: true
+  field_reg_std_urgent_email: true
+  field_reg_std_urgent_facebook: true
   field_reg_std_urgent_rel: true
   field_reg_th_reding: true
   field_reg_th_speaking: true
@@ -308,9 +279,11 @@ hidden:
   field_reg_training_02: true
   field_reg_training_03: true
   field_reg_urgent_address: true
+  field_reg_urgent_mobile: true
   field_reg_urgent_name: true
   field_reg_urgent_relationship: true
   field_reg_urgent_tel: true
+  field_reg_urgent_tel_home: true
   language: true
   path: true
   timezone: true

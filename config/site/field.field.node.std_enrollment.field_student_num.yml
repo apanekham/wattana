@@ -1,0 +1,23 @@
+uuid: 182fb12f-4cd3-43b6-a03f-cc049db5ebdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_student_num
+    - node.type.std_enrollment
+  module:
+    - serial
+id: node.std_enrollment.field_student_num
+field_name: field_student_num
+entity_type: node
+bundle: std_enrollment
+label: ເລກລະຫັດນັກຮຽນ
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings: {  }
+field_type: serial

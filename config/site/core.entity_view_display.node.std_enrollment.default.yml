@@ -1,0 +1,91 @@
+uuid: f01fc383-b111-4755-aff3-da01ad8757d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.std_enrollment.body
+    - field.field.node.std_enrollment.field_enroll_classroom
+    - field.field.node.std_enrollment.field_enroll_date
+    - field.field.node.std_enrollment.field_enroll_school_year
+    - field.field.node.std_enrollment.field_enroll_semester
+    - field.field.node.std_enrollment.field_enroll_student
+    - field.field.node.std_enrollment.field_student_num
+    - node.type.std_enrollment
+  module:
+    - datetime
+    - field_layout
+    - layout_discovery
+    - serial
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.std_enrollment.default
+targetEntityType: node
+bundle: std_enrollment
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_enroll_classroom:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_enroll_date:
+    weight: 105
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_enroll_school_year:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_enroll_semester:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_enroll_student:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_student_num:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: serial_default_formatter
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
